@@ -50,7 +50,7 @@ const Beranda = () => {
             menyajikan situs web dan aplikasi kustom yang kuat, menggabungkan
             estetika dengan kinerja.
           </p>
-          <ScrollLink to="kontak" smooth>
+          <ScrollLink to="Kontak" smooth>
             <button className="btn btn-accent mb-8">Kontak Saya</button>
           </ScrollLink>
 

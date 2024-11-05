@@ -1,4 +1,3 @@
-"use client";
 import React from "react";
 import { Link as ScrollLink } from "react-scroll";
 
@@ -32,6 +31,12 @@ const Navigasi = ({ gayaWadah, gayaDaftar, gayaTautan, pengintai }) => {
             to={tautan.nama}
             smooth={true}
             className={gayaTautan}
+            onMouseEnter={(e) => {
+              if (tautan.nama === "Beranda") e.target.style.color = "#7edad2";
+            }}
+            onMouseLeave={(e) => {
+              if (tautan.nama === "Beranda") e.target.style.color = "";
+            }}
           >
             {tautan.nama}
           </ScrollLink>
