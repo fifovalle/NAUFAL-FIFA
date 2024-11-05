@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect } from "react";
 // KOMPONEN SAYA
-import Beranda from "@/components/Beranda";
+import Beranda from "@/components/beranda";
 import Layanan from "@/components/layanan";
 import Tentang from "@/components/tentang";
 import Perjalanan from "@/components/perjalanan";
