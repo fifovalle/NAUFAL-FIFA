@@ -9,35 +9,35 @@ import "swiper/css/pagination";
 // KOMPONEN SAYA
 import AnimasiTeks from "@/components/animasiTeks";
 // GAMBAR SAYA
-import Gambar from "@/public/assets/testimoni/testimonial1.jpg";
-import Gambar2 from "@/public/assets/testimoni/testimonial2.jpg";
-import Gambar3 from "@/public/assets/testimoni/testimonial3.jpg";
-import Gambar4 from "@/public/assets/testimoni/testimonial4.jpg";
+import Gambar from "@/public/assets/testimoni/1.jpg";
+import Gambar2 from "@/public/assets/testimoni/2.jpg";
+import Gambar3 from "@/public/assets/testimoni/3.jpg";
+import Gambar4 from "@/public/assets/testimoni/4.jpeg";
 
 const penggeser = [
   {
     gambar: Gambar,
     nama: "Mas Zahran",
     pesan:
-      "Aplikasi ini sangat membantu saya dalam mengelola pekerjaan sehari-hari. Fitur-fiturnya lengkap dan mudah digunakan!",
+      "Terima kasih atas layanan dan produk yang luar biasa! PTSP sangat membantu pekerjaan kami menjadi lebih efisien. Sukses terus!",
   },
   {
     gambar: Gambar2,
     nama: "Pa Muslikun",
     pesan:
-      "Desainnya menarik dan user-friendly! Sangat memudahkan saya dalam mengakses informasi yang dibutuhkan.",
+      "SIMORE yang kami beli dari Anda benar-benar memberikan kemudahan dalam proses administrasi kami. Produk yang sangat bermanfaat!",
   },
   {
     gambar: Gambar3,
     nama: "Pa Budi",
     pesan:
-      "Pelayanan dan performa aplikasinya luar biasa. Sangat direkomendasikan untuk kebutuhan sehari-hari.",
+      "Luar biasa! Dapur Ku menghadirkan solusi dapur modern yang praktis dan inovatif. Kami sangat puas dengan produk ini!",
   },
   {
     gambar: Gambar4,
     nama: "Pa Nano",
     pesan:
-      "Sangat membantu dan memudahkan pekerjaan. Terima kasih untuk tim yang telah membuat aplikasi ini!",
+      "NDARU FARM benar-benar memudahkan manajemen pertanian kami. Terima kasih atas produk yang sangat bermanfaat dan inovatif!",
   },
 ];
 

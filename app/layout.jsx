@@ -16,6 +16,9 @@ const bebasNeue = Bebas_Neue({
 export const metadata = {
   title: "Naufal FIFA",
   description: "Portofolio Naufal FIFA",
+  icons: {
+    icon: "/a.ico",
+  },
 };
 
 export default function RootLayout({ children }) {
