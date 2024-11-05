@@ -41,7 +41,13 @@ const DaftarTetap = () => {
     <div className="fixed w-full h-[400px] z-50 flex justify-center pointer-events-none bg-transparent">
       <AnimatePresence>
         {tampilkanDaftar && (
-          <motion.div className="relative w-full max-w-md md:max-w-none h-[400px] bottom-[28rem] xl:bottom-[21.2rem] px-4 pointer-events-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 20 }}
+            transition={{ duration: 0.2 }}
+            className="relative w-full max-w-md md:max-w-none h-[400px] bottom-[28rem] xl:bottom-[21.2rem] px-4 pointer-events-auto"
+          >
             <div className="bg-white w-full h-full shadow-kebiasaan max-w-[1170px] mx-auto py-12 xl:py-12 px-12 xl:px-32 flex items-center gap-12 rounded-lg">
               <Navigasi
                 gayaWadah="md:border-r-2 border-kedua/20 md:pr-12 w-full md:w-auto text-center md:text-left"

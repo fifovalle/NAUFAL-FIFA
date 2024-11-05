@@ -8,6 +8,8 @@ import Perjalanan from "@/components/perjalanan";
 import Pekerjaan from "@/components/pekerjaan";
 import Kontak from "@/components/Kontak";
 import DaftarTetap from "@/components/daftarTetap";
+import Testimonial from "@/components/testimonial";
+import Kaki from "@/components/kaki";
 
 const Utama = () => {
   useEffect(() => {
@@ -27,9 +29,9 @@ const Utama = () => {
       <Tentang />
       <Perjalanan />
       <Pekerjaan />
+      <Testimonial />
       <Kontak />
-
-      <div className="h-[3000px]"></div>
+      <Kaki />
     </>
   );
 };

@@ -91,7 +91,7 @@ const PekerjaanSaya = [
     kategori: "Website",
     gambar: Gambar,
     judul: "Portofolio Versi 1.0",
-    tanggal: new Date("2024-01-01"),
+    tanggal: "2024-01-01",
   },
   {
     tautan:
@@ -99,7 +99,7 @@ const PekerjaanSaya = [
     kategori: "Website",
     gambar: Gambar2,
     judul: "Portofolio Versi 2.0",
-    tanggal: new Date("2024-01-02"),
+    tanggal: "2024-01-02",
   },
   {
     tautan:
@@ -107,7 +107,7 @@ const PekerjaanSaya = [
     kategori: "Website",
     gambar: Gambar3,
     judul: "Portofolio Versi 3.0",
-    tanggal: new Date("2024-01-03"),
+    tanggal: "2024-01-03",
   },
   {
     tautan:
@@ -115,7 +115,7 @@ const PekerjaanSaya = [
     kategori: "Website",
     gambar: Gambar4,
     judul: "Portofolio Versi 4.0",
-    tanggal: new Date("2024-01-04"),
+    tanggal: "2024-01-04",
   },
   {
     tautan:
@@ -123,63 +123,63 @@ const PekerjaanSaya = [
     kategori: "Website",
     gambar: Gambar5,
     judul: "Portofolio Versi 5.0",
-    tanggal: new Date("2024-01-05"),
+    tanggal: "2024-01-05",
   },
   {
     tautan: "https://github.com/fifovalle/WEBSITE-DASHBOARD-ADMIN.git",
     kategori: "Website",
     gambar: Gambar6,
     judul: "Dashboard Admin Barokah",
-    tanggal: new Date("2024-01-06"),
+    tanggal: "2024-01-06",
   },
   {
     tautan: "https://github.com/fifovalle/ATM-SEDERHANA.git",
     kategori: "Website",
     gambar: Gambar7,
     judul: "ATM Sederhana",
-    tanggal: new Date("2024-02-01"),
+    tanggal: "2024-01-02",
   },
   {
     tautan: "https://github.com/fifovalle/HALAMAN-PEMELIHARAAN.git",
     kategori: "UI",
     gambar: Gambar8,
     judul: "Halaman Pemeliharaan",
-    tanggal: new Date("2024-02-01"),
+    tanggal: "2024-01-02",
   },
   {
     tautan: "https://github.com/fifovalle/UI-KARTU-KREDIT.git",
     kategori: "UI",
     gambar: Gambar9,
     judul: "Kartu Kredit",
-    tanggal: new Date("2024-01-01"),
+    tanggal: "2024-01-02",
   },
   {
     tautan: "https://github.com/fifovalle/WEBSITE-LANDING-PAGE.git",
     kategori: "Website",
     gambar: Gambar10,
     judul: "Landing Page",
-    tanggal: new Date("2024-01-20"),
+    tanggal: "2024-01-20",
   },
   {
     tautan: "https://github.com/fifovalle/UI-PENGATURAN-SISTEM.git",
     kategori: "UI",
     gambar: Gambar11,
     judul: "Pengaturan Sistem",
-    tanggal: new Date("2024-01-20"),
+    tanggal: "2024-01-20",
   },
   {
     tautan: "https://github.com/fifovalle/UI-PENGATURAN-SISTEM.git",
     kategori: "UI",
     gambar: Gambar12,
     judul: "Navigasi Bar",
-    tanggal: new Date("2024-01-20"),
+    tanggal: "2024-01-20",
   },
   {
     tautan: "https://github.com/fifovalle/UI-NAVIGASI-BAR-VERSI-2.0.git",
     kategori: "UI",
     gambar: Gambar13,
     judul: "Navigasi Bar Versi 2.0",
-    tanggal: new Date("2024-01-20"),
+    tanggal: "2024-01-20",
   },
   {
     tautan:
@@ -187,98 +187,98 @@ const PekerjaanSaya = [
     kategori: "UI",
     gambar: Gambar14,
     judul: "Pengecekan Kata Sandi",
-    tanggal: new Date("2024-01-20"),
+    tanggal: "2024-01-20",
   },
   {
     tautan: "https://github.com/fifovalle/UI-PEMUAT.git",
     kategori: "UI",
     gambar: Gambar15,
     judul: "Pemuat",
-    tanggal: new Date("2024-01-20"),
+    tanggal: "2024-01-20",
   },
   {
     tautan: "https://github.com/fifovalle/UI-HOVER-KARTU-RINCIAN.git",
     kategori: "UI",
     gambar: Gambar16,
     judul: "Hover Rincian",
-    tanggal: new Date("2024-01-20"),
+    tanggal: "2024-01-20",
   },
   {
     tautan: "https://github.com/fifovalle/UI-PEMUAT-VERSI-2.0.git",
     kategori: "UI",
     gambar: Gambar17,
     judul: "Pemuat Versi 2.0",
-    tanggal: new Date("2024-01-20"),
+    tanggal: "2024-01-20",
   },
   {
     tautan: "https://github.com/fifovalle/UI-PEMUAT-3D.git",
     kategori: "UI",
     gambar: Gambar18,
     judul: "Pemuat 3D",
-    tanggal: new Date("2024-02-02"),
+    tanggal: "2024-01-02",
   },
   {
     tautan: "https://github.com/fifovalle/UI-KARTU-PRODUK.git",
     kategori: "UI",
     gambar: Gambar19,
     judul: "Kartu Produk",
-    tanggal: new Date("2024-02-03"),
+    tanggal: "2024-01-03",
   },
   {
     tautan: "https://github.com/fifovalle/UI-PRODUK.git",
     kategori: "UI",
     gambar: Gambar20,
     judul: "Produk",
-    tanggal: new Date("2024-02-04"),
+    tanggal: "2024-01-04",
   },
   {
     tautan: "https://github.com/fifovalle/PERMAINAN-ULAR-NEON.git",
     kategori: "UI",
     gambar: Gambar21,
     judul: "Permainan Ular Neon",
-    tanggal: new Date("2024-02-06"),
+    tanggal: "2024-01-06",
   },
   {
     tautan: "https://github.com/fifovalle/UI-TEKS-GLITCH-HOVER.git",
     kategori: "UI",
     gambar: Gambar22,
     judul: "Teks Glitch Hover",
-    tanggal: new Date("2024-02-09"),
+    tanggal: "2024-03-01",
   },
   {
     tautan: "https://github.com/fifovalle/UI-PEMUAT-VERSI-3.0.git",
     kategori: "UI",
     gambar: Gambar23,
     judul: "Pemuat Versi 3.0",
-    tanggal: new Date("2024-02-10"),
+    tanggal: "2024-03-02",
   },
   {
     tautan: "https://github.com/fifovalle/UI-FORM-LOGIN-TEMA-HACKER.git",
     kategori: "UI",
     gambar: Gambar24,
     judul: "Formulir Login Tema Hacker",
-    tanggal: new Date("2024-02-11"),
+    tanggal: "2024-03-03",
   },
   {
     tautan: "https://github.com/fifovalle/UI-PEMUAT-VERSI-4.0.git",
     kategori: "UI",
     gambar: Gambar25,
     judul: "Pemuat Versi 4.0",
-    tanggal: new Date("2024-02-12"),
+    tanggal: "2024-03-04",
   },
   {
     tautan: "https://github.com/fifovalle/UI-KARTU-PRODUK-VERSI-2.0.git",
     kategori: "UI",
     gambar: Gambar26,
     judul: "Kartu Produk Versi 2.0",
-    tanggal: new Date("2024-02-13"),
+    tanggal: "2024-03-05",
   },
   {
     tautan: "https://github.com/fifovalle/UI-KARTU-PRODUK-VERSI-2.0.git",
     kategori: "UI",
     gambar: Gambar27,
     judul: "Kartu Produk Versi 2.0",
-    tanggal: new Date("2024-02-13"),
+    tanggal: "2024-03-06",
   },
 ];
 
@@ -295,7 +295,10 @@ const Pekerjaan = () => {
   const [nilaiTab, setNilaiTab] = useState("Semua");
   const [perlihatkanKonten, setPerlihatkanKonten] = useState(6);
 
-  const pekerjaanTerurut = PekerjaanSaya.sort((a, b) => b.tanggal - a.tanggal);
+  const pekerjaanTerurut = PekerjaanSaya.map((pekerjaan) => ({
+    ...pekerjaan,
+    tanggal: new Date(pekerjaan.tanggal),
+  })).sort((a, b) => b.tanggal.getTime() - a.tanggal.getTime());
 
   const filterPekerjaan =
     nilaiTab === "Semua"
