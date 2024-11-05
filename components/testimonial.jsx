@@ -13,6 +13,7 @@ import Gambar from "@/public/assets/testimoni/1.jpg";
 import Gambar2 from "@/public/assets/testimoni/2.jpg";
 import Gambar3 from "@/public/assets/testimoni/3.jpg";
 import Gambar4 from "@/public/assets/testimoni/4.jpeg";
+import Gambar5 from "@/public/assets/testimoni/5.jpg";
 
 const penggeser = [
   {
@@ -38,6 +39,12 @@ const penggeser = [
     nama: "Pa Nano",
     pesan:
       "NDARU FARM benar-benar memudahkan manajemen pertanian kami. Terima kasih atas produk yang sangat bermanfaat dan inovatif!",
+  },
+  {
+    gambar: Gambar5,
+    nama: "Pa Agus",
+    pesan:
+      "Dengan bangga kami mengumumkan bahwa proyek FSI telah berhasil diselesaikan! Terima kasih kepada semua pihak yang terlibat dalam proses ini.",
   },
 ];
 
