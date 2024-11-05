@@ -23,6 +23,12 @@ const penggeser = [
       "Terima kasih atas layanan dan produk yang luar biasa! PTSP sangat membantu pekerjaan kami menjadi lebih efisien. Sukses terus!",
   },
   {
+    gambar: Gambar,
+    nama: "Mas Zahran",
+    pesan:
+      "Terima kasih banyak atas dedikasi dan kerja keras yang telah kamu berikan dalam menyelesaikan proyek pengelolaan data alat-alat BMKG dan titik koordinatnya. Proyek ini tidak hanya berjalan lancar, tetapi juga memberikan manfaat yang besar. Saya sangat menghargai semua usaha yang telah kamu lakukan!",
+  },
+  {
     gambar: Gambar2,
     nama: "Pa Muslikun",
     pesan:
