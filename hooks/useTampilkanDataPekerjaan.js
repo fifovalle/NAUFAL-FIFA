@@ -12,7 +12,7 @@ const useTampilkanPekerjaan = () => {
 
         querySnapshot.forEach((docSnapshot) => {
           dataPekerjaan.push({
-            id: docSnapshot.,
+            id: docSnapshot.id,
             ...docSnapshot.data(),
           });
         });
