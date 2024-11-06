@@ -46,7 +46,7 @@ const Beranda = () => {
               className="ml-2 xl:ml-4"
             />
           </h1>
-          <p className="lead max-w-[500px] mb-7">
+          <p className="lead max-w-[500px] mb-7 text-justify md:text-left">
             menyajikan situs web dan aplikasi kustom yang kuat, menggabungkan
             estetika dengan kinerja.
           </p>

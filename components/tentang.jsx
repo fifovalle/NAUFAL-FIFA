@@ -55,7 +55,7 @@ const Tentang = () => {
               <AnimasiTeks teks="Nama Saya Naufal FIFA" gayaTeks="h2 mb-2" />
               <p className="text-lg">Fullstack Web & Mobile Developer</p>
             </div>
-            <p className="max-w-[680px] mx-auto xl:mx-0 mb-2">
+            <p className="max-w-[680px] mx-auto xl:mx-0 mb-2 text-justify">
               Saya adalah seorang Fullstack Web & Mobile Developer. Saya senang
               bekerja di bidang IT dan memiliki ketertarikan besar terhadap
               perkembangan teknologi. Dalam setiap proyek yang saya kerjakan,
