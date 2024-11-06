@@ -75,7 +75,7 @@ const Testimonial = () => {
         />
         <div className="flex flex-col lg:flex-row gap-12">
           {/* INFO PENGGESER */}
-          <div className="w-max xl:w-[600px] flex flex-col justify-center items-center xl:items-start text-center xl:text-left mx-auto xl:mx-0">
+          <div className="w-full xl:w-[600px] flex flex-col justify-center items-center xl:items-start text-center xl:text-left mx-auto xl:mx-0">
             <ImQuotesLeft className="text-9xl text-aksen/20 leading-none mb-4" />
             <h3 className="h3 mb-2">{penggeser[penggeserAktif].nama}</h3>
             <p className="mb-8 max-w-[360px]">

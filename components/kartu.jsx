@@ -16,8 +16,8 @@ const Kartu = ({
   jangkaWaktu,
 }) => {
   return (
-    <div className="w-full h-[300px] overflow-hidden flex items-center sticky top-12">
-      <div className="w-full h-[270px] border border-aksen/80 bg-[#f4ffff] rounded-[8px]">
+    <div className="w-full h-[450px] md:h-[300px] overflow-hidden flex items-center sticky top-12">
+      <div className="w-full h-[400px] md:h-[270px] border border-aksen/80 bg-[#f4ffff] rounded-[8px]">
         <div className="flex flex-col h-full">
           <div className="h-[80px] xl:h-[68px] bg-white flex flex-col xl:flex-row justify-center xl:justify-between items-center px-6 md:px-[84px] rounded-tl-[8px] rounded-tr-[8px]">
             <div className="flex gap-2">
@@ -44,7 +44,7 @@ const Kartu = ({
                   <div className="text-5xl text-utama/90">{ikon}</div>
                 </div>
               ) : jenis === "pengalaman" || jenis === "edukasi" ? (
-                <div className="relative xl:w-[100px] xl:h-[44px]">
+                <div className="relative w-[70px] h-[70px] xl:w-[100px] xl:h-[44px]">
                   <Image src={tautanLogo} alt="logo" width={100} height={100} />
                 </div>
               ) : (

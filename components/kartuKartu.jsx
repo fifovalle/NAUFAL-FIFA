@@ -78,7 +78,7 @@ const perjalananSaya = [
     pencapaian: "Fullstack Mobile Developer",
     jangkaWaktu: "Juli 2022  - Sekarang",
     deskripsi:
-      "Mempelajari bahasa pemrograman mobile dengan pendekatan fullstack, termasuk Java untuk pengembangan native Android dan React Native untuk pengembangan cross-platform. Fokus pada pembuatan aplikasi mobile yang responsif, user-friendly, dan berkinerja tinggi, baik di sisi frontend maupun backend. Menerapkan praktik terbaik dalam pengembangan perangkat lunak, seperti arsitektur modular, pengelolaan state yang efektif, optimasi performa, dan keamanan data pengguna.",
+      "Mempelajari pengembangan aplikasi mobile dengan pendekatan fullstack, mencakup Java untuk pengembangan native Android dan React Native untuk cross-platform. Fokus pada pembuatan aplikasi responsif, user-friendly, dan berkinerja tinggi, dengan penerapan praktik terbaik seperti arsitektur modular, pengelolaan state, optimasi performa, dan keamanan data pengguna.",
   },
 
   {
