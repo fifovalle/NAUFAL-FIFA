@@ -15,7 +15,7 @@ const Testimonial = () => {
   const [refprensiiPenggesek, setRefprensiPenggesek] = useState(null);
   const [penggeserAktif, setPenggeserAktif] = useState(0);
 
-  const { testimoni } = useTampilkanTestimoni();
+  const { testimoni, memuat } = useTampilkanTestimoni();
 
   const tanganiSebelumnya = useCallback(() => {
     refprensiiPenggesek?.slidePrev();
@@ -24,6 +24,12 @@ const Testimonial = () => {
   const tanganiSelanjutnya = useCallback(() => {
     refprensiiPenggesek?.slideNext();
   }, [refprensiiPenggesek]);
+
+  if (memuat) {
+    return <div></div>;
+  }
+
+  const testimoniAktif = testimoni && testimoni[penggeserAktif];
 
   return (
     <div className="py-24 overflow-hidden">
@@ -36,35 +42,34 @@ const Testimonial = () => {
           {/* INFO PENGGESER */}
           <div className="w-full xl:w-[600px] flex flex-col justify-center items-center xl:items-start text-center xl:text-left mx-auto xl:mx-0">
             <ImQuotesLeft className="text-9xl text-aksen/20 leading-none mb-4" />
-            {testimoni && testimoni[penggeserAktif] ? (
+            {testimoniAktif ? (
               <>
-                <h3 className="h3 mb-2">{testimoni[penggeserAktif].Nama}</h3>
+                <h3 className="h3 mb-2">{testimoniAktif.Nama}</h3>
                 <p className="mb-8 max-w-[360px] text-justify">
-                  {testimoni[penggeserAktif].Pesan}
+                  {testimoniAktif.Pesan}
                 </p>
               </>
             ) : (
-              <p></p>
+              <p>Data tidak tersedia</p>
             )}
 
-            {
-              <div className="flex gap-3">
-                <button
-                  onClick={tanganiSebelumnya}
-                  className="text-2xl bg-aksen w-[48px] h-[48px] text-white rounded-full flex items-center justify-center hover:bg-aksen-melayang transition-all duration-300"
-                >
-                  <FiArrowLeft />
-                </button>
+            <div className="flex gap-3">
+              <button
+                onClick={tanganiSebelumnya}
+                className="text-2xl bg-aksen w-[48px] h-[48px] text-white rounded-full flex items-center justify-center hover:bg-aksen-melayang transition-all duration-300"
+              >
+                <FiArrowLeft />
+              </button>
 
-                <button
-                  onClick={tanganiSelanjutnya}
-                  className="text-2xl bg-aksen w-[48px] h-[48px] text-white rounded-full flex items-center justify-center hover:bg-aksen-melayang transition-all duration-300"
-                >
-                  <FiArrowRight />
-                </button>
-              </div>
-            }
+              <button
+                onClick={tanganiSelanjutnya}
+                className="text-2xl bg-aksen w-[48px] h-[48px] text-white rounded-full flex items-center justify-center hover:bg-aksen-melayang transition-all duration-300"
+              >
+                <FiArrowRight />
+              </button>
+            </div>
           </div>
+
           {/* PENGGESER */}
           <Swiper
             slidesPerView={1}
@@ -85,9 +90,9 @@ const Testimonial = () => {
                 slidesPerView: 4,
               },
             }}
-            onSlideChange={(penggeser) =>
-              setPenggeserAktif(penggeser.realIndex)
-            }
+            onSlideChange={(swiper) => {
+              setPenggeserAktif(swiper.realIndex);
+            }}
             modules={[Autoplay]}
             autoplay={{
               delay: 3000,
@@ -95,25 +100,27 @@ const Testimonial = () => {
             }}
             className="w-full h-[400px] xl:h-[500px]"
           >
-            {testimoni.map((testimoni, indeks) => (
-              <SwiperSlide key={indeks} className="h-full select-none">
-                <div className="w-full h-full flex items-end">
-                  <div
-                    className={`${
-                      penggeserAktif === indeks ? "h-full" : "h-[248px]"
-                    } flex items-end rounded-xl overflow-hidden transition-all duration-500 relative w-full`}
-                  >
-                    <Image
-                      src={testimoni.Gambar}
-                      className="object-cover object-center"
-                      quality={100}
-                      fill
-                      alt="Gambar"
-                    />
+            {testimoni &&
+              testimoni.length > 0 &&
+              testimoni.map((testimoni, indeks) => (
+                <SwiperSlide key={indeks} className="h-full select-none">
+                  <div className="w-full h-full flex items-end">
+                    <div
+                      className={`${
+                        penggeserAktif === indeks ? "h-full" : "h-[248px]"
+                      } flex items-end rounded-xl overflow-hidden transition-all duration-500 relative w-full`}
+                    >
+                      <Image
+                        src={testimoni.Gambar}
+                        className="object-cover object-center"
+                        quality={100}
+                        fill
+                        alt="Gambar"
+                      />
+                    </div>
                   </div>
-                </div>
-              </SwiperSlide>
-            ))}
+                </SwiperSlide>
+              ))}
           </Swiper>
         </div>
       </div>
