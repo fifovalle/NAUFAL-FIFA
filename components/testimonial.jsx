@@ -8,55 +8,14 @@ import "swiper/css";
 import "swiper/css/pagination";
 // KOMPONEN SAYA
 import AnimasiTeks from "@/components/animasiTeks";
-// GAMBAR SAYA
-import Gambar from "@/public/assets/testimoni/1.jpg";
-import Gambar2 from "@/public/assets/testimoni/2.jpg";
-import Gambar3 from "@/public/assets/testimoni/3.jpg";
-import Gambar4 from "@/public/assets/testimoni/4.jpeg";
-import Gambar5 from "@/public/assets/testimoni/5.jpg";
-
-const penggeser = [
-  {
-    gambar: Gambar,
-    nama: "Mas Zahran",
-    pesan:
-      "Terima kasih atas layanan dan produk yang luar biasa! PTSP sangat membantu pekerjaan kami menjadi lebih efisien. Sukses terus!",
-  },
-  {
-    gambar: Gambar,
-    nama: "Mas Zahran",
-    pesan:
-      "Terima kasih banyak atas dedikasi dan kerja keras yang telah kamu berikan dalam menyelesaikan proyek pengelolaan data alat-alat BMKG dan titik koordinatnya. Proyek ini tidak hanya berjalan lancar, tetapi juga memberikan manfaat yang besar. Saya sangat menghargai semua usaha yang telah kamu lakukan!",
-  },
-  {
-    gambar: Gambar2,
-    nama: "Pa Muslikun",
-    pesan:
-      "SIMORE yang kami beli dari Anda benar-benar memberikan kemudahan dalam proses administrasi kami. Produk yang sangat bermanfaat!",
-  },
-  {
-    gambar: Gambar3,
-    nama: "Pa Budi",
-    pesan:
-      "Luar biasa! Dapur Ku menghadirkan solusi dapur modern yang praktis dan inovatif. Kami sangat puas dengan produk ini!",
-  },
-  {
-    gambar: Gambar4,
-    nama: "Pa Nano",
-    pesan:
-      "NDARU FARM benar-benar memudahkan manajemen pertanian kami. Terima kasih atas produk yang sangat bermanfaat dan inovatif!",
-  },
-  {
-    gambar: Gambar5,
-    nama: "Pa Agus",
-    pesan:
-      "Dengan bangga kami mengumumkan bahwa proyek FSI telah berhasil diselesaikan! Terima kasih kepada semua pihak yang terlibat dalam proses ini.",
-  },
-];
+// PENGAIT KAMI
+import useTampilkanTestimoni from "@/hooks/useTampilkanDataTestimoni";
 
 const Testimonial = () => {
   const [refprensiiPenggesek, setRefprensiPenggesek] = useState(null);
   const [penggeserAktif, setPenggeserAktif] = useState(0);
+
+  const { testimoni } = useTampilkanTestimoni();
 
   const tanganiSebelumnya = useCallback(() => {
     refprensiiPenggesek?.slidePrev();
@@ -77,10 +36,16 @@ const Testimonial = () => {
           {/* INFO PENGGESER */}
           <div className="w-full xl:w-[600px] flex flex-col justify-center items-center xl:items-start text-center xl:text-left mx-auto xl:mx-0">
             <ImQuotesLeft className="text-9xl text-aksen/20 leading-none mb-4" />
-            <h3 className="h3 mb-2">{penggeser[penggeserAktif].nama}</h3>
-            <p className="mb-8 max-w-[360px] text-justify">
-              {penggeser[penggeserAktif].pesan}
-            </p>
+            {testimoni && testimoni[penggeserAktif] ? (
+              <>
+                <h3 className="h3 mb-2">{testimoni[penggeserAktif].Nama}</h3>
+                <p className="mb-8 max-w-[360px] text-justify">
+                  {testimoni[penggeserAktif].Pesan}
+                </p>
+              </>
+            ) : (
+              <p></p>
+            )}
 
             {
               <div className="flex gap-3">
@@ -130,7 +95,7 @@ const Testimonial = () => {
             }}
             className="w-full h-[400px] xl:h-[500px]"
           >
-            {penggeser.map((penggeser, indeks) => (
+            {testimoni.map((testimoni, indeks) => (
               <SwiperSlide key={indeks} className="h-full select-none">
                 <div className="w-full h-full flex items-end">
                   <div
@@ -139,7 +104,7 @@ const Testimonial = () => {
                     } flex items-end rounded-xl overflow-hidden transition-all duration-500 relative w-full`}
                   >
                     <Image
-                      src={penggeser.gambar}
+                      src={testimoni.Gambar}
                       className="object-cover object-center"
                       quality={100}
                       fill
