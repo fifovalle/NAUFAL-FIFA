@@ -10,7 +10,7 @@ const statusSaya = [
   },
   {
     teks: "+",
-    jumlah: 78,
+    jumlah: 80,
     deskripsi: "Proyek",
   },
   {
