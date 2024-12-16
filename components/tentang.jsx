@@ -66,7 +66,7 @@ const Tentang = () => {
               {/* TEKS 1 */}
               <div className="max-w-max">
                 <div className="uppercase font-bold text-utama">Usia</div>
-                <p>21 </p>
+                <p>22</p>
               </div>
 
               {/* TEKS 2 */}

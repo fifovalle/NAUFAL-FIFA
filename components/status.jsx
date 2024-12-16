@@ -10,7 +10,7 @@ const Status = () => {
   const statusSaya = [
     {
       teks: "+",
-      jumlah: 1,
+      jumlah: 2,
       deskripsi: "Tahun Pengalaman",
     },
     {
