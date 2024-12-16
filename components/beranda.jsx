@@ -38,6 +38,8 @@ const Beranda = () => {
                 2000,
                 "Self-Employed",
                 2000,
+                "Founder Wireify",
+                2000,
               ]}
               speed={50}
               repeat={Infinity}
