@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 // GAMBAR SAYA
-import Gambarku from "@/public/assets/tentang/foto.png";
+import Gambarku from "@/public/assets/tentang/Naufal.png";
 import Bentuk1 from "@/public/assets/tentang/bentuk-1.svg";
 // KOMPONEN SAYA
 import AnimasiTeks from "@/components/animasiTeks";
@@ -41,7 +41,7 @@ const Tentang = () => {
                   <Image src={Bentuk1} width={160} height={160} alt="bentuk" />
                 </motion.div>
                 <div className="absolute text-center text-white">
-                  <div className="text-5xl font-bold leading-none">1+</div>
+                  <div className="text-5xl font-bold leading-none">2+</div>
                   <div className="leading-none text-center">
                     Tahun <br /> Pengalaman
                   </div>
