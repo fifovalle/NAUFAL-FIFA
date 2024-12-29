@@ -1,8 +1,8 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import { TypeAnimation } from "react-type-animation";
 import { Link as ScrollLink } from "react-scroll";
+import { TypeAnimation } from "react-type-animation";
 // GAMBAR SAYA
 import Gambarku from "@/public/assets/beranda/foto.png";
 import Panah1 from "@/public/assets/beranda/panah.svg";
@@ -53,7 +53,17 @@ const Beranda = () => {
             estetika dengan kinerja.
           </p>
           <ScrollLink to="Kontak" smooth>
-            <button className="btn btn-accent mb-8">Kontak Saya</button>
+            <button
+              onClick={() => {
+                const link = document.createElement("a");
+                link.href = "/assets/CV.pdf";
+                link.download = "CV.pdf";
+                link.click();
+              }}
+              className="btn btn-accent mb-8"
+            >
+              Unduh CV
+            </button>
           </ScrollLink>
 
           {/* STATUS */}
