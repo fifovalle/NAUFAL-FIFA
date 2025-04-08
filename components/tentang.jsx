@@ -66,12 +66,12 @@ const Tentang = () => {
                             </p>
                         </div>
                         <p className="max-w-[680px] mx-auto xl:mx-0 mb-2 text-justify">
-                            Hi! I'm a Fullstack Web & Mobile Developer who’s
-                            passionate about the world of IT and constantly
-                            inspired by the rapid growth of technology. I love
-                            turning ideas into innovative and efficient
-                            solutions that truly meet user needs and make a real
-                            impact.
+                            Hi! I&apos;m a Fullstack Web & Mobile Developer
+                            who&rsquo;s passionate about the world of IT and
+                            constantly inspired by the rapid growth of
+                            technology. I love turning ideas into innovative and
+                            efficient solutions that truly meet user needs and
+                            make a real impact.
                         </p>
                         <div className="flex flex-col lg:flex-row gap-8 xl:gap-9 max-w-max mx-auto xl:mx-0 items-center">
                             {/* TEKS 1 */}

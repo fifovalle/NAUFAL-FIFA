@@ -18,12 +18,12 @@ import {
     SiNextdotjs,
     SiFirebase,
     SiTailwindcss,
-    SiThreedotjs,
     SiTypescript,
     SiCplusplus,
     SiMysql,
     SiSupabase,
     SiDocker,
+    SiPostman,
 } from "react-icons/si";
 // KOMPONEN SAYA
 import Kartu from "@/components/kartu";
@@ -194,6 +194,14 @@ const perjalananSaya = [
         jangkaWaktu: "Learned Since 2024",
         deskripsi:
             "Explored Next.js framework for building dynamic and SEO-optimized web applications. It enhances performance and supports server-side rendering.",
+    },
+    {
+        jenis: "keahlian",
+        nama: "Postman",
+        ikon: <SiPostman />,
+        jangkaWaktu: "Learned Since 2024",
+        deskripsi:
+            "Used Postman to test and document APIs efficiently. It helps in ensuring API reliability, debugging requests, and collaborating with backend services effectively.",
     },
     {
         jenis: "keahlian",
