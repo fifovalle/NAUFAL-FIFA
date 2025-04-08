@@ -58,7 +58,7 @@ const Tentang = () => {
                     <div className="text-center xl:text-left w-full xl:w-[50%] mx-auto xl:mx-0 flex flex-col gap-6">
                         <div>
                             <AnimasiTeks
-                                teks="Nama Saya Naufal FIFA"
+                                teks="I am Naufal FIFA"
                                 gayaTeks="h2 mb-2"
                             />
                             <p className="text-lg">
