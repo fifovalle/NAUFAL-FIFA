@@ -3,19 +3,19 @@ import { Link as ScrollLink } from "react-scroll";
 
 const tautanNavigasi = [
     {
-        nama: "Beranda",
+        nama: "Home",
     },
     {
-        nama: "Tentang Saya",
+        nama: "About Me",
     },
     {
-        nama: "Perjalanan",
+        nama: "Journey",
     },
     {
-        nama: "Pekerjaan",
+        nama: "Work",
     },
     {
-        nama: "Kontak",
+        nama: "Contact",
     },
 ];
 
@@ -31,14 +31,6 @@ const Navigasi = ({ gayaWadah, gayaDaftar, gayaTautan, pengintai }) => {
                         to={tautan.nama}
                         smooth={true}
                         className={gayaTautan}
-                        onMouseEnter={(e) => {
-                            if (tautan.nama === "Beranda")
-                                e.target.style.color = "#D0CAC1";
-                        }}
-                        onMouseLeave={(e) => {
-                            if (tautan.nama === "Beranda")
-                                e.target.style.color = "";
-                        }}
                     >
                         {tautan.nama}
                     </ScrollLink>

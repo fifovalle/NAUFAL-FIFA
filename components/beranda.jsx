@@ -26,20 +26,20 @@ const Beranda = () => {
             <div className="container mx-auto h-full">
                 <div className="relative z-20 h-full w-full xl:max-w-[768px] flex flex-col items-center xl:items-start justify-center text-center xl:text-left pt-10">
                     <h1 className="h1">
-                        <span className="text-aksen">Perkenalkan </span>Saya
-                        Seorang
+                        <span className="text-aksen">Hi There! 👋</span> <br />{" "}
+                        I am a
                         <TypeAnimation
                             preRenderFirstString={true}
                             sequence={[
                                 "Content Creator",
                                 2000,
-                                "Fullstack",
+                                "Fullstack Dev",
                                 2000,
-                                "Mahasiswa",
+                                "Freelancer",
                                 2000,
-                                "Self-Employed",
+                                "College Student",
                                 2000,
-                                "Founder Wireify",
+                                "Founder of Wireify",
                                 2000,
                             ]}
                             speed={50}
@@ -49,9 +49,9 @@ const Beranda = () => {
                             className="ml-2 xl:ml-4"
                         />
                     </h1>
-                    <p className="lead max-w-[500px] mb-7 text-justify md:text-left">
-                        menyajikan situs web dan aplikasi kustom yang kuat,
-                        menggabungkan estetika dengan kinerja.
+                    <p className="lead max-w-[560px] mb-7 text-justify md:text-left">
+                        Specializing in powerful, tailor-made web and app
+                        solutions that harmonize design and functionality.
                     </p>
                     <ScrollLink to="Kontak" smooth>
                         <button
@@ -63,7 +63,7 @@ const Beranda = () => {
                             }}
                             className="btn btn-accent transition-all 0.3s ease-in-out mb-8"
                         >
-                            Unduh CV
+                            Get My CV
                         </button>
                     </ScrollLink>
 

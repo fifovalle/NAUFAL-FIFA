@@ -5,38 +5,38 @@ import KontenStatus from "@/components/kontenStatus";
 import useTampilkanPekerjaan from "@/hooks/useTampilkanDataPekerjaan";
 
 const Status = () => {
-  const { jumlahPekerjaan } = useTampilkanPekerjaan();
+    const { jumlahPekerjaan } = useTampilkanPekerjaan();
 
-  const statusSaya = [
-    {
-      teks: "+",
-      jumlah: 2,
-      deskripsi: "Tahun Pengalaman",
-    },
-    {
-      teks: "+",
-      jumlah: jumlahPekerjaan,
-      deskripsi: "Proyek",
-    },
-    {
-      teks: "%",
-      jumlah: 95,
-      deskripsi: "Pelanggan Puas",
-    },
-  ];
+    const statusSaya = [
+        {
+            teks: "+",
+            jumlah: 2,
+            deskripsi: "Years of Experience",
+        },
+        {
+            teks: "+",
+            jumlah: jumlahPekerjaan,
+            deskripsi: "Projects",
+        },
+        {
+            teks: "%",
+            jumlah: 95,
+            deskripsi: "Satisfied Clients",
+        },
+    ];
 
-  return (
-    <section className="flex justify-center xl:justify-normal mx-auto xl:mx-0 xl:w-[380px] gap-4 xl:gap-0">
-      {statusSaya.map((status, indeks) => (
-        <KontenStatus
-          key={indeks}
-          jumlah={status.jumlah}
-          teks={status.teks}
-          deskripsi={status.deskripsi}
-        />
-      ))}
-    </section>
-  );
+    return (
+        <section className="flex justify-center xl:justify-normal mx-auto xl:mx-0 xl:w-[399px] gap-4 xl:gap-0">
+            {statusSaya.map((status, indeks) => (
+                <KontenStatus
+                    key={indeks}
+                    jumlah={status.jumlah}
+                    teks={status.teks}
+                    deskripsi={status.deskripsi}
+                />
+            ))}
+        </section>
+    );
 };
 
 export default Status;

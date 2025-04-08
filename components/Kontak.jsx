@@ -53,7 +53,7 @@ const Kontak = () => {
                 <div className="flex flex-col items-center xl:flex-row gap-16">
                     <div className="flex-1 mx-auto xl:mx-0 flex flex-col">
                         <AnimasiTeks
-                            teks="Ayo Bekerja Sama"
+                            teks="Let's Collaborate"
                             gayaTeks="h2 mb-12 text-center xl:text-left"
                         />
 
@@ -67,7 +67,7 @@ const Kontak = () => {
                                         htmlFor="namaDepan"
                                         className="block mb-2 text-sm font-medium text-utama"
                                     >
-                                        Nama Depan{" "}
+                                        First Name{" "}
                                         <span className="text-aksen">*</span>
                                     </label>
                                     <input
@@ -77,7 +77,7 @@ const Kontak = () => {
                                         name="namaDepan"
                                         value={dataFormulir.namaDepan}
                                         className="input"
-                                        placeholder="Nama Depan"
+                                        placeholder="First Name"
                                         required
                                     />
                                 </div>
@@ -87,7 +87,7 @@ const Kontak = () => {
                                         htmlFor="namaBelakang"
                                         className="block mb-2 text-sm font-medium text-utama"
                                     >
-                                        Nama Belakang{" "}
+                                        Last Name{" "}
                                         <span className="text-aksen">*</span>
                                     </label>
                                     <input
@@ -97,7 +97,7 @@ const Kontak = () => {
                                         name="namaBelakang"
                                         value={dataFormulir.namaBelakang}
                                         className="input"
-                                        placeholder="Nama Belakang"
+                                        placeholder="Last Name"
                                         required
                                     />
                                 </div>
@@ -117,7 +117,7 @@ const Kontak = () => {
                                     name="email"
                                     value={dataFormulir.email}
                                     className="input"
-                                    placeholder="emailAnda@gmail.com"
+                                    placeholder="yourEmail@example.com"
                                     required
                                 />
                                 <ValidationError
@@ -132,7 +132,7 @@ const Kontak = () => {
                                     htmlFor="nomorTelepon"
                                     className="block mb-2 text-sm font-medium text-utama"
                                 >
-                                    Nomor Telepon{" "}
+                                    Phone Number{" "}
                                     <span className="text-aksen">*</span>
                                 </label>
                                 <input
@@ -152,16 +152,16 @@ const Kontak = () => {
                                     htmlFor="pesan"
                                     className="block mb-2 text-sm font-medium text-utama"
                                 >
-                                    Pesan <span className="text-aksen">*</span>
+                                    Message{" "}
+                                    <span className="text-aksen">*</span>
                                 </label>
                                 <textarea
                                     onChange={tanganiPerubahan}
-                                    type="text"
                                     id="pesan"
                                     name="pesan"
                                     value={dataFormulir.pesan}
                                     className="textarea"
-                                    placeholder="Tinggalkan Pesanmu Disini..."
+                                    placeholder="Leave your message here..."
                                     rows="5"
                                     required
                                 />
@@ -175,10 +175,21 @@ const Kontak = () => {
                             <button
                                 type="submit"
                                 disabled={state.submitting}
-                                className="btn btn-accent flex items-center justify-center gap-2"
+                                className={`btn btn-accent flex items-center justify-center gap-2 ${
+                                    state.submitting
+                                        ? "pointer-events-none opacity-50"
+                                        : ""
+                                }`}
                             >
                                 {state.submitting ? (
-                                    <span>Mengirim...</span>
+                                    <span className="flex items-end gap-1 text-white">
+                                        Sending
+                                        <span className="flex space-x-1">
+                                            <span className="w-1.5 h-1.5 bg-white rounded-full animate-bounce [animation-delay:-0.3s]" />
+                                            <span className="w-1.5 h-1.5 bg-white rounded-full animate-bounce [animation-delay:-0.15s]" />
+                                            <span className="w-1.5 h-1.5 bg-white rounded-full animate-bounce" />
+                                        </span>
+                                    </span>
                                 ) : (
                                     <>
                                         <FaCheckCircle
@@ -195,7 +206,7 @@ const Kontak = () => {
                                                     : "opacity-100"
                                             }`}
                                         >
-                                            Kirim Pesan
+                                            Send Message
                                         </span>
                                     </>
                                 )}

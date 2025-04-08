@@ -16,11 +16,11 @@ const Pekerjaan = () => {
     );
 
     const dataTab = [
-        { Kategori: "Semua" },
+        { Kategori: "All" },
         ...kategoriUnik.map((Kategori) => ({ Kategori })),
     ];
 
-    const [nilaiTab, setNilaiTab] = useState("Semua");
+    const [nilaiTab, setNilaiTab] = useState("All");
     const [perlihatkanKonten, setPerlihatkanKonten] = useState(6);
 
     const pekerjaanTerurut = pekerjaan
@@ -34,7 +34,7 @@ const Pekerjaan = () => {
         .sort((a, b) => b.Tanggal - a.Tanggal);
 
     const filterPekerjaan =
-        nilaiTab === "Semua"
+        nilaiTab === "All"
             ? pekerjaanTerurut
             : pekerjaanTerurut.filter((konten) => konten.Kategori === nilaiTab);
 
@@ -45,10 +45,10 @@ const Pekerjaan = () => {
     return (
         <section className="pt-24 min-h-[1000px]" id="Pekerjaan">
             <div className="container mx-auto">
-                <Tabs defaultValue="Semua" className="w-full flex flex-col">
+                <Tabs defaultValue="All" className="w-full flex flex-col">
                     <div className="flex flex-col xl:flex-row items-center xl:items-start xl:justify-between mb-[30px]">
                         <AnimasiTeks
-                            teks="Pekerjaan Terbaru Saya"
+                            teks="My Latest Professional Experience"
                             gayaTeks="h2 mb-[30px] xl:mb-0"
                         />
 
@@ -90,7 +90,7 @@ const Pekerjaan = () => {
                                     onClick={kotenSelengkapnya}
                                     className="btn btn-accent"
                                 >
-                                    Lihat Selengkapnya
+                                    View More
                                 </button>
                             </div>
                         )}

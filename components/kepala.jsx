@@ -15,7 +15,7 @@ const Kepala = () => {
                         <Navigasi
                             gayaWadah="hidden xl:flex"
                             gayaDaftar="flex gap-6"
-                            gayaTautan="text-utama font-utama text-lg tracking-[1.4px] transition-all duration-300 cursor-pointer hover:text-white hover:underline hover:underline-offset-4"
+                            gayaTautan="text-[#f7f7f7] font-utama text-xl tracking-[1.4px] transition-all duration-300 cursor-pointer hover:text-utama hover:underline hover:underline-offset-4"
                         />
                         <Sosial
                             gayaWadah="flex items-center gap-2"

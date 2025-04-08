@@ -22,6 +22,8 @@ import {
     SiTypescript,
     SiCplusplus,
     SiMysql,
+    SiSupabase,
+    SiDocker,
 } from "react-icons/si";
 // KOMPONEN SAYA
 import Kartu from "@/components/kartu";
@@ -29,6 +31,7 @@ import Kartu from "@/components/kartu";
 import Logo1 from "@/public/assets/perjalanan/pengalaman/logo-1.svg";
 import Logo2 from "@/public/assets/perjalanan/pengalaman/logo-2.svg";
 import Logo3 from "@/public/assets/perjalanan/pengalaman/logo-3.svg";
+import Logo10 from "@/public/assets/perjalanan/pengalaman/logo-4.png";
 import Logo4 from "@/public/assets/perjalanan/edukasi/logo-1.svg";
 import Logo5 from "@/public/assets/perjalanan/edukasi/logo-2.svg";
 import Logo6 from "@/public/assets/perjalanan/setifikat/1.svg";
@@ -39,193 +42,207 @@ const perjalananSaya = [
         perusahaan: "BMKG Bengkulu",
         tautanLogo: Logo1,
         posisi: "Fullstack Web Developer",
-        jangkaWaktu: "Januari 2024 - Sekarang",
+        jangkaWaktu: "January 2024 – Present",
         deskripsi:
-            "Mengembangkan aplikasi PTSP dengan antarmuka responsif dan backend yang efisien. Bekerja sama dalam tim untuk meningkatkan layanan publik melalui integrasi data cuaca real-time.",
+            "Led the development of the PTSP web application with a responsive and user-friendly interface, along with a scalable backend architecture. Worked closely with the team to improve public services through seamless integration of real-time weather data and geospatial information.",
     },
     {
         jenis: "pengalaman",
-        perusahaan: "Basarnas Bengkulu",
-        tautanLogo: Logo2,
-        posisi: "Fullstack Web Developer",
-        jangkaWaktu: "Juni 2024 - Juli 2024",
+        perusahaan: "Minilemon",
+        tautanLogo: Logo10,
+        posisi: "Frontend Mobile Developer",
+        jangkaWaktu: "February 2025 – Present",
         deskripsi:
-            "Bertanggung jawab atas pengembangan aplikasi Simore (Sistem Monitoring Rescue), menciptakan frontend intuitif dan backend efisien untuk mendukung operasi pencarian dan penyelamatan dengan akses informasi real-time.",
+            "Building and maintaining cross-platform mobile applications using React Native. Focused on delivering high-quality UI/UX, smooth user interactions, and ensuring performance optimization for both Android and iOS devices.",
     },
     {
         jenis: "pengalaman",
         perusahaan: "Ndaru Farm",
         tautanLogo: Logo3,
         posisi: "Fullstack Mobile & Web Developer",
-        jangkaWaktu: "Agustus 2024 - Sekarang",
+        jangkaWaktu: "August 2024 – Present",
         deskripsi:
-            "Mengembangkan aplikasi E-Commerce untuk penjualan produk pertanian, dengan fitur manajemen produk, keranjang belanja, dan integrasi pembayaran. Berkolaborasi dalam optimasi SEO untuk meningkatkan visibilitas aplikasi.",
+            "Developed a comprehensive E-Commerce platform for agricultural products, featuring product catalog, cart system, checkout, and online payments. Contributed to backend logic, responsive design, and SEO strategies to increase reach and usability.",
     },
-
+    {
+        jenis: "pengalaman",
+        perusahaan: "Basarnas Bengkulu",
+        tautanLogo: Logo2,
+        posisi: "Fullstack Web Developer",
+        jangkaWaktu: "June 2024 – July 2024",
+        deskripsi:
+            "Designed and implemented the Simore (Rescue Monitoring System) web application. Delivered a real-time monitoring dashboard and robust backend to support search and rescue operations, ensuring fast and reliable data access for emergency teams.",
+    },
     {
         jenis: "edukasi",
         intuisi: "SMK Mahardhika",
         tautanLogo: Logo4,
         pencapaian: "Fullstack Web Developer",
-        jangkaWaktu: "Juli 2019  - Juli 2021",
+        jangkaWaktu: "July 2019 – July 2021",
         deskripsi:
-            "Mempelajari berbagai bahasa pemrograman web seperti HTML, CSS, JavaScript, PHP, dan framework terkait. Selama studi, mengembangkan proyek yang meningkatkan keterampilan teknis dan pemahaman tentang pengembangan aplikasi web, termasuk pemrograman sisi server dengan PHP.",
+            "Studied various web programming languages such as HTML, CSS, JavaScript, PHP, and related frameworks. Gained hands-on experience through projects that enhanced technical skills and understanding of web application development, including server-side programming with PHP.",
     },
     {
         jenis: "edukasi",
         intuisi: "Universitas Jenderal Achmad Yani",
         tautanLogo: Logo5,
         pencapaian: "Fullstack Mobile Developer",
-        jangkaWaktu: "Juli 2022  - Sekarang",
+        jangkaWaktu: "July 2022 – Present",
         deskripsi:
-            "Mempelajari pengembangan aplikasi mobile dengan pendekatan fullstack, mencakup Java untuk pengembangan native Android dan React Native untuk cross-platform. Fokus pada pembuatan aplikasi responsif, user-friendly, dan berkinerja tinggi, dengan penerapan praktik terbaik seperti arsitektur modular, pengelolaan state, optimasi performa, dan keamanan data pengguna.",
+            "Focused on fullstack mobile application development, including native Android development with Java and cross-platform apps using React Native. Emphasized building responsive, user-friendly, and high-performance applications while applying best practices such as modular architecture, state management, performance optimization, and user data security.",
     },
-
     {
         jenis: "keahlian",
         nama: "HTML",
         ikon: <FaHtml5 />,
-        jangkaWaktu: "Dipelajari Sejak 2019",
+        jangkaWaktu: "Learned Since 2019",
         deskripsi:
-            "Mempelajari struktur web dan bagaimana elemen-elemen HTML membentuk konten halaman. Penguasaan HTML memungkinkan saya untuk merancang dan mengembangkan antarmuka web yang fungsional.",
+            "Learned the fundamentals of web structure and how HTML elements shape web content. This skill enables me to design and develop functional web interfaces.",
     },
     {
         jenis: "keahlian",
         nama: "CSS",
         ikon: <FaCss3Alt />,
-        jangkaWaktu: "Dipelajari Sejak 2019",
+        jangkaWaktu: "Learned Since 2019",
         deskripsi:
-            "Mempelajari desain web melalui CSS untuk mengatur tata letak, warna, dan tipografi. Dengan keterampilan ini, saya mampu menciptakan tampilan visual yang menarik dan responsif untuk situs web.",
+            "Studied web design using CSS to manage layouts, colors, and typography. This allows me to create visually appealing and responsive web designs.",
     },
     {
         jenis: "keahlian",
         nama: "JavaScript",
         ikon: <FaJs />,
-        jangkaWaktu: "Dipelajari Sejak 2019",
+        jangkaWaktu: "Learned Since 2019",
         deskripsi:
-            "Mempelajari pemrograman web menggunakan JavaScript untuk menambah interaktivitas dan dinamika pada situs. Kemampuan ini mendukung pengembangan aplikasi web yang lebih kompleks dan interaktif.",
+            "Learned JavaScript to add interactivity and dynamic behavior to websites. This skill supports the development of complex and interactive web applications.",
     },
     {
         jenis: "keahlian",
         nama: "Bootstrap",
         ikon: <FaBootstrap />,
-        jangkaWaktu: "Dipelajari Sejak 2019",
+        jangkaWaktu: "Learned Since 2019",
         deskripsi:
-            "Mempelajari framework Bootstrap untuk membuat tampilan web yang responsif dan interaktif. Keterampilan ini membantu saya dalam membuat tampilan web yang menarik dan interaktif.",
+            "Explored the Bootstrap framework to create responsive and interactive web interfaces. This helps in building modern, user-friendly layouts efficiently.",
     },
     {
         jenis: "keahlian",
         nama: "PHP",
         ikon: <FaPhp />,
-        jangkaWaktu: "Dipelajari Sejak 2019",
+        jangkaWaktu: "Learned Since 2019",
         deskripsi:
-            "Mempelajari bahasa pemrograman PHP untuk membangun aplikasi web. Keterampilan ini membantu saya dalam membangun aplikasi web yang interaktif dan dinamis.",
+            "Learned PHP programming to develop dynamic web applications. This skill allows me to create functional server-side logic.",
     },
     {
         jenis: "keahlian",
         nama: "Laravel",
         ikon: <FaLaravel />,
-        jangkaWaktu: "Dipelajari Sejak 2019",
+        jangkaWaktu: "Learned Since 2019",
         deskripsi:
-            "Mempelajari framework Laravel untuk membangun aplikasi web. Keterampilan ini membantu saya dalam membangun aplikasi web yang interaktif dan dinamis.",
+            "Studied the Laravel framework to build structured and scalable web applications. It supports my ability to develop interactive and robust platforms.",
     },
     {
         jenis: "keahlian",
         nama: "MySQL",
         ikon: <SiMysql />,
-        jangkaWaktu: "Dipelajari Sejak 2019",
+        jangkaWaktu: "Learned Since 2019",
         deskripsi:
-            "Mempelajari database MySQL untuk membangun aplikasi web. Keterampilan ini membantu saya dalam membangun aplikasi web yang interaktif dan dinamis.",
+            "Learned to use MySQL for managing relational databases in web development. This helps in building data-driven and dynamic applications.",
     },
     {
         jenis: "keahlian",
         nama: "Java",
         ikon: <FaJava />,
-        jangkaWaktu: "Dipelajari Sejak 2019",
+        jangkaWaktu: "Learned Since 2019",
         deskripsi:
-            "Mempelajari bahasa pemrograman Java untuk membuat aplikasi berbasis objek. Keterampilan ini membantu saya dalam membangun aplikasi web yang interaktif dan efektif.",
+            "Studied Java programming for building object-oriented applications. This supports the creation of reliable and scalable software solutions.",
     },
     {
         jenis: "keahlian",
         nama: "C++",
         ikon: <SiCplusplus />,
-        jangkaWaktu: "Dipelajari Sejak 2019",
+        jangkaWaktu: "Learned Since 2019",
         deskripsi:
-            "Mempelajari bahasa pemrograman C++ untuk membuat aplikasi berbasis objek. Keterampilan ini membantu saya dalam membangun aplikasi web yang interaktif dan efektif.",
+            "Learned C++ for developing object-oriented programs. This enhances my understanding of memory management and low-level programming concepts.",
     },
     {
         jenis: "keahlian",
         nama: "Figma",
         ikon: <FaFigma />,
-        jangkaWaktu: "Dipelajari Sejak 2023",
+        jangkaWaktu: "Learned Since 2023",
         deskripsi:
-            "Mempelajari desain web menggunakan Figma untuk membuat prototipe dan antarmuka pengguna. Keterampilan ini membantu saya dalam mendesain pengalaman pengguna yang intuitif dan estetis.",
+            "Studied UI/UX design using Figma to create prototypes and user interfaces. This enables me to design intuitive and aesthetic user experiences.",
     },
     {
         jenis: "keahlian",
         nama: "React",
         ikon: <FaReact />,
-        jangkaWaktu: "Dipelajari Sejak 2024",
+        jangkaWaktu: "Learned Since 2024",
         deskripsi:
-            "Mempelajari library React untuk membangun antarmuka pengguna yang efisien dan dinamis. Dengan React, saya dapat mengembangkan aplikasi web yang memiliki performa tinggi dan pengelolaan status yang efektif.",
+            "Learned the React library to build efficient and dynamic user interfaces. React supports the development of high-performance web applications with effective state management.",
     },
     {
         jenis: "keahlian",
         nama: "Node JS",
         ikon: <FaNodeJs />,
-        jangkaWaktu: "Dipelajari Sejak 2024",
+        jangkaWaktu: "Learned Since 2024",
         deskripsi:
-            "Mempelajari framework Node JS untuk membangun aplikasi server-side. Keterampilan ini membantu saya dalam membuat aplikasi web yang cepat dan responsif.",
+            "Studied Node.js to develop server-side applications. This skill enables me to build fast, scalable, and real-time web services.",
     },
     {
         jenis: "keahlian",
         nama: "Next JS",
         ikon: <SiNextdotjs />,
-        jangkaWaktu: "Dipelajari Sejak 2024",
+        jangkaWaktu: "Learned Since 2024",
         deskripsi:
-            "Mempelajari framework Next JS untuk membangun aplikasi web dinamis. Keterampilan ini membantu saya dalam membuat aplikasi web yang responsif dan dinamis.",
+            "Explored Next.js framework for building dynamic and SEO-optimized web applications. It enhances performance and supports server-side rendering.",
     },
     {
         jenis: "keahlian",
         nama: "Firebase",
         ikon: <SiFirebase />,
-        jangkaWaktu: "Dipelajari Sejak 2024",
+        jangkaWaktu: "Learned Since 2024",
         deskripsi:
-            "Mempelajari platform Firebase untuk membangun aplikasi web. Keterampilan ini membantu saya dalam membuat aplikasi web yang interaktif dan efektif.",
+            "Learned to use Firebase as a backend service for building interactive and scalable web and mobile applications.",
+    },
+    {
+        jenis: "keahlian",
+        nama: "Supabase",
+        ikon: <SiSupabase />,
+        jangkaWaktu: "Learned Since 2024",
+        deskripsi:
+            "Studied Supabase as a backend-as-a-service platform to build scalable and real-time applications. This skill enables me to integrate authentication, databases, and storage with ease.",
     },
     {
         jenis: "keahlian",
         nama: "Tailwind CSS",
         ikon: <SiTailwindcss />,
-        jangkaWaktu: "Dipelajari Sejak 2024",
+        jangkaWaktu: "Learned Since 2024",
         deskripsi:
-            "Mempelajari framework Tailwind CSS untuk membangun antarmuka pengguna yang responsif dan estetis. Keterampilan ini membantu saya dalam membuat tampilan web yang menarik dan interaktif.",
+            "Studied Tailwind CSS to design responsive and visually appealing user interfaces with utility-first styling.",
     },
     {
         jenis: "keahlian",
         nama: "TypeScript",
         ikon: <SiTypescript />,
-        jangkaWaktu: "Dipelajari Sejak 2024",
+        jangkaWaktu: "Learned Since 2024",
         deskripsi:
-            "Mempelajari bahasa pemrograman TypeScript untuk membangun aplikasi web yang lebih kompleks dan efektif. Keterampilan ini membantu saya dalam membangun aplikasi web yang stabil dan efektif.",
+            "Learned TypeScript to write safer and more scalable JavaScript code. It improves code quality and development efficiency in large-scale applications.",
     },
     {
         jenis: "keahlian",
-        nama: "Three JS",
-        ikon: <SiThreedotjs />,
-        jangkaWaktu: "Dipelajari Sejak 2024",
+        nama: "Docker",
+        ikon: <SiDocker />,
+        jangkaWaktu: "Learned Since 2024",
         deskripsi:
-            "Mempelajari framework Three JS untuk membangun animasi 3D. Keterampilan ini membantu saya dalam membuat tampilan 3D yang interaktif dan responsif.",
+            "Learned Docker to containerize applications and ensure consistency across development and production environments. This improves deployment efficiency and scalability.",
     },
-
     {
         jenis: "setifikat",
         perusahaan: "Basarnas Bengkulu",
         tautanLogo: Logo6,
         posisi: "Fullstack Web Developer",
-        jangkaWaktu: "Juni 2024  - Juli 2024",
+        jangkaWaktu: "June 2024 – July 2024",
         deskripsi:
-            "Mengembangkan aplikasi Simore (Sistem Monitoring Rescue) dengan fokus pada frontend. Mengimplementasikan sistem manajemen pelaporan dan pelanggaran, sistem keamanan, dan integrasi dengan sistem manajemen data.",
+            "Developed the Simore (Rescue Monitoring System) application with a focus on frontend implementation. Integrated reporting and violation management systems, implemented security protocols, and ensured seamless data management system integration.",
     },
 ];
 
@@ -235,11 +252,11 @@ const KartuKartu = () => {
             defaultValue="pengalaman"
             className="w-full flex flex-col items-center"
         >
-            <TabsList className="max-w-max mb-[30px]">
-                <TabsTrigger value="pengalaman">Pengalaman</TabsTrigger>
-                <TabsTrigger value="edukasi">Edukasi</TabsTrigger>
-                <TabsTrigger value="keahlian">Keahlian</TabsTrigger>
-                <TabsTrigger value="setifikat">Setifikat</TabsTrigger>
+            <TabsList className="max-w-max md:block flex mb-[30px] items-center justify-center">
+                <TabsTrigger value="pengalaman">Experience</TabsTrigger>
+                <TabsTrigger value="edukasi">Education</TabsTrigger>
+                <TabsTrigger value="keahlian">Skills</TabsTrigger>
+                <TabsTrigger value="setifikat">Certificates</TabsTrigger>
             </TabsList>
 
             <TabsContent value="pengalaman" className="w-full">

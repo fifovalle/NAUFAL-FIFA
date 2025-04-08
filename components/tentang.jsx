@@ -48,7 +48,7 @@ const Tentang = () => {
                                         2+
                                     </div>
                                     <div className="leading-none text-center">
-                                        Tahun <br /> Pengalaman
+                                        Years of <br /> Experience
                                     </div>
                                 </div>
                             </div>
@@ -66,19 +66,18 @@ const Tentang = () => {
                             </p>
                         </div>
                         <p className="max-w-[680px] mx-auto xl:mx-0 mb-2 text-justify">
-                            Saya adalah seorang Fullstack Web & Mobile
-                            Developer. Saya senang bekerja di bidang IT dan
-                            memiliki ketertarikan besar terhadap perkembangan
-                            teknologi. Dalam setiap proyek yang saya kerjakan,
-                            saya berusaha untuk memberikan solusi yang inovatif
-                            dan efisien agar dapat memenuhi kebutuhan pengguna
-                            dengan optimal.
+                            Hi! I'm a Fullstack Web & Mobile Developer who’s
+                            passionate about the world of IT and constantly
+                            inspired by the rapid growth of technology. I love
+                            turning ideas into innovative and efficient
+                            solutions that truly meet user needs and make a real
+                            impact.
                         </p>
-                        <div className="flex flex-col lg:flex-row gap-8 xl:gap-12 max-w-max mx-auto xl:mx-0 items-center">
+                        <div className="flex flex-col lg:flex-row gap-8 xl:gap-9 max-w-max mx-auto xl:mx-0 items-center">
                             {/* TEKS 1 */}
                             <div className="max-w-max">
                                 <div className="uppercase font-bold text-utama">
-                                    Usia
+                                    Age
                                 </div>
                                 <p>22</p>
                             </div>
@@ -86,7 +85,7 @@ const Tentang = () => {
                             {/* TEKS 2 */}
                             <div className="max-w-max">
                                 <div className="uppercase font-bold text-utama">
-                                    Lahir
+                                    Birthplace
                                 </div>
                                 <p>Bandung</p>
                             </div>
@@ -94,9 +93,9 @@ const Tentang = () => {
                             {/* TEKS 3 */}
                             <div className="max-w-max">
                                 <div className="uppercase font-bold text-utama">
-                                    Ponsel
+                                    Phone
                                 </div>
-                                <p>+62 823 1833 4287</p>
+                                <p>+62 823-1833-4287</p>
                             </div>
 
                             {/* TEKS 3 */}
