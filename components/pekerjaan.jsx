@@ -43,7 +43,7 @@ const Pekerjaan = () => {
     };
 
     return (
-        <section className="pt-24 min-h-[1000px]" id="Pekerjaan">
+        <section className="pt-24 min-h-[1000px]" id="Work">
             <div className="container mx-auto">
                 <Tabs defaultValue="All" className="w-full flex flex-col">
                     <div className="flex flex-col xl:flex-row items-center xl:items-start xl:justify-between mb-[30px]">

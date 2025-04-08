@@ -18,7 +18,7 @@ const Beranda = () => {
     return (
         <section
             className="h-[800px] relative bg-aksen/10 xl:bg-white"
-            id="Beranda"
+            id="Home"
         >
             {/* KEPALA */}
             <Kepala />
@@ -53,7 +53,7 @@ const Beranda = () => {
                         Specializing in powerful, tailor-made web and app
                         solutions that harmonize design and functionality.
                     </p>
-                    <ScrollLink to="Kontak" smooth>
+                    <ScrollLink to="Contact" smooth>
                         <button
                             onClick={() => {
                                 const link = document.createElement("a");

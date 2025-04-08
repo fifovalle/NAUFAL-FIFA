@@ -9,7 +9,7 @@ import AnimasiTeks from "@/components/animasiTeks";
 
 const Tentang = () => {
     return (
-        <section className="relative pt-12 pb-24" id="Tentang Saya">
+        <section className="relative pt-12 pb-24" id="About Me">
             <div className="container mx-auto h-full">
                 <div className="h-full flex items-center justify-center">
                     {/* GAMBAR DAN BENTUK */}

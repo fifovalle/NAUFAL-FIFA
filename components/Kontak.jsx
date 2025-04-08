@@ -48,7 +48,7 @@ const Kontak = () => {
     };
 
     return (
-        <section className="pt-8 xl:pt-12 pb-32" id="Kontak">
+        <section className="pt-8 xl:pt-12 pb-32" id="Contact">
             <div className="container mx-auto">
                 <div className="flex flex-col items-center xl:flex-row gap-16">
                     <div className="flex-1 mx-auto xl:mx-0 flex flex-col">
