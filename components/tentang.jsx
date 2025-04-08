@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useMemo } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 // GAMBAR SAYA
@@ -62,16 +62,18 @@ const Tentang = () => {
                                 gayaTeks="h2 mb-2"
                             />
                             <p className="text-lg">
-                                Fullstack Web & Mobile Developer
+                                Frontend to Backend. Web to Mobile.
                             </p>
                         </div>
                         <p className="max-w-[680px] mx-auto xl:mx-0 mb-2 text-justify">
-                            Hi! I&apos;m a Fullstack Web & Mobile Developer
-                            who&rsquo;s passionate about the world of IT and
-                            constantly inspired by the rapid growth of
-                            technology. I love turning ideas into innovative and
-                            efficient solutions that truly meet user needs and
-                            make a real impact.
+                            Hi! I&#39;m a Fullstack Web &amp; Mobile Developer
+                            who works across the entire stack — from designing
+                            intuitive frontends to building powerful backends.
+                            I&#39;m passionate about creating seamless digital
+                            experiences for both web and mobile platforms. With
+                            a strong love for technology and continuous
+                            learning, I turn ideas into impactful, user-centered
+                            solutions.
                         </p>
                         <div className="flex flex-col lg:flex-row gap-8 xl:gap-9 max-w-max mx-auto xl:mx-0 items-center">
                             {/* TEKS 1 */}
@@ -79,7 +81,23 @@ const Tentang = () => {
                                 <div className="uppercase font-bold text-utama">
                                     Age
                                 </div>
-                                <p>22</p>
+                                <p>
+                                    {(() => {
+                                        const lahir = new Date("2003-02-10");
+                                        const sekarang = new Date();
+                                        let umur =
+                                            sekarang.getFullYear() -
+                                            lahir.getFullYear();
+                                        const belumUltah =
+                                            sekarang.getMonth() <
+                                                lahir.getMonth() ||
+                                            (sekarang.getMonth() ===
+                                                lahir.getMonth() &&
+                                                sekarang.getDate() <
+                                                    lahir.getDate());
+                                        return belumUltah ? umur - 1 : umur;
+                                    })()}
+                                </p>
                             </div>
 
                             {/* TEKS 2 */}
