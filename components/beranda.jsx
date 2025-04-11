@@ -57,8 +57,10 @@ const Beranda = () => {
                         <button
                             onClick={() => {
                                 const link = document.createElement("a");
-                                link.href = "/assets/CV.pdf";
-                                link.download = "CV.pdf";
+                                link.href =
+                                    "/assets/NAUFAL-FADHIL-IHSAN-FIKRI-ASH-SHIDQI.pdf";
+                                link.download =
+                                    "NAUFAL-FADHIL-IHSAN-FIKRI-ASH-SHIDQI.pdf";
                                 link.click();
                             }}
                             className="btn btn-accent transition-all 0.3s ease-in-out mb-8"
