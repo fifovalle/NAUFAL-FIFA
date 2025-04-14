@@ -66,14 +66,16 @@ const Tentang = () => {
                             </p>
                         </div>
                         <p className="max-w-[680px] mx-auto xl:mx-0 mb-2 text-justify">
-                            Hi! I&#39;m a Fullstack Web &amp; Mobile Developer
-                            who works across the entire stack — from designing
-                            intuitive frontends to building powerful backends.
-                            I&#39;m passionate about creating seamless digital
-                            experiences for both web and mobile platforms. With
-                            a strong love for technology and continuous
-                            learning, I turn ideas into impactful, user-centered
-                            solutions.
+                            Hello! I am a Fullstack Web &amp; Mobile Developer
+                            with over a year of experience building seamless web
+                            and mobile applications. I specialize in designing
+                            intuitive frontends and developing robust backends.
+                            I am passionate about creating smooth digital
+                            experiences across both web and mobile platforms.
+                            With a strong enthusiasm for technology and
+                            continuous learning, I turn ideas into impactful,
+                            user-centric solutions while ensuring best practices
+                            are followed to avoid errors during deployment.
                         </p>
                         <div className="flex flex-col lg:flex-row gap-8 xl:gap-9 max-w-max mx-auto xl:mx-0 items-center">
                             {/* TEKS 1 */}
