@@ -30,7 +30,6 @@ import Kartu from "@/components/kartu";
 // LOGO SAYA
 import Logo1 from "@/public/assets/perjalanan/pengalaman/logo-1.svg";
 import Logo2 from "@/public/assets/perjalanan/pengalaman/logo-2.svg";
-import Logo3 from "@/public/assets/perjalanan/pengalaman/logo-3.svg";
 import Logo10 from "@/public/assets/perjalanan/pengalaman/logo-4.png";
 import Logo4 from "@/public/assets/perjalanan/edukasi/logo-1.svg";
 import Logo5 from "@/public/assets/perjalanan/edukasi/logo-2.svg";
@@ -39,7 +38,7 @@ import Logo6 from "@/public/assets/perjalanan/setifikat/1.svg";
 const perjalananSaya = [
     {
         jenis: "pengalaman",
-        perusahaan: "BMKG Bengkulu",
+        perusahaan: "Badan Meteorologi, Klimatologi, dan Geofisika. Bengkulu",
         tautanLogo: Logo1,
         posisi: "Fullstack Web Developer",
         jangkaWaktu: "January 2024 – Present",
@@ -48,25 +47,16 @@ const perjalananSaya = [
     },
     {
         jenis: "pengalaman",
-        perusahaan: "Minilemon",
+        perusahaan: "PT. Minilemon Nusantara",
         tautanLogo: Logo10,
-        posisi: "Frontend Mobile Developer",
+        posisi: "Senior Mobile Developer",
         jangkaWaktu: "February 2025 – Present",
         deskripsi:
-            "Building and maintaining cross-platform mobile applications using React Native. Focused on delivering high-quality UI/UX, smooth user interactions, and ensuring performance optimization for both Android and iOS devices.",
+            "Leading the development of cross-platform mobile applications using modern frameworks. Collaborating with UI/UX designers and backend engineers to deliver high-quality and scalable apps. Responsible for code review, architecture decisions, and mentoring junior developers.",
     },
     {
         jenis: "pengalaman",
-        perusahaan: "Ndaru Farm",
-        tautanLogo: Logo3,
-        posisi: "Fullstack Mobile & Web Developer",
-        jangkaWaktu: "August 2024 – Present",
-        deskripsi:
-            "Developed a comprehensive E-Commerce platform for agricultural products, featuring product catalog, cart system, checkout, and online payments. Contributed to backend logic, responsive design, and SEO strategies to increase reach and usability.",
-    },
-    {
-        jenis: "pengalaman",
-        perusahaan: "Basarnas Bengkulu",
+        perusahaan: "Kantor SAR Bengkulu (BASARNAS)",
         tautanLogo: Logo2,
         posisi: "Fullstack Web Developer",
         jangkaWaktu: "June 2024 – July 2024",
