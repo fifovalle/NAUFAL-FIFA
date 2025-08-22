@@ -52,7 +52,7 @@ const Home = () => {
                                 className="text-accent inline-block min-w-[400px]"
                             />
                         </h1>
-                        <p className="max-w-[500px] mb-[44px] text-center xl:text-justify">
+                        <p className="max-w-[500px] mb-[44px] text-justify">
                             I am a Fullstack Cross-Platform Developer with
                             extensive experience in building responsive
                             websites, modern web applications, and mobile
