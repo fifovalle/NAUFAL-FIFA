@@ -10,8 +10,8 @@ import { HiOutlineMail, HiOutlinePhone } from "react-icons/hi";
 import Blob from "@/components/Blob";
 import Socials from "@/components/Socials";
 // Assets
-import avatarImg from "@/public/assets/me.png";
 import Pattern from "@/components/Pattern";
+import avatarImg from "@/public/assets/me.png";
 
 const Home = () => {
     return (
@@ -85,7 +85,7 @@ const Home = () => {
                     </div>
                     {/* ============== SOCIALS =============== */}
                     <Socials
-                        containerStyles="flex 2xl:flex-col gap-6 xl:hidden 2xl:flex 2xl:absolute 2xl:top-1/2 2xl:right-2 2xl:transform 2xl:-translate-x-1/2 2xl:-translate-y-1/2"
+                        containerStyles="flex 2xl:flex-col gap-4 xl:gap-5 xl:hidden 2xl:flex 2xl:absolute 2xl:top-1/2 2xl:right-2 2xl:transform 2xl:-translate-x-1/2 2xl:-translate-y-1/2"
                         iconStyles="bg-accent text-white hover:bg-accent-hover transition w-[48px] h-[48px] text-[22px] flex items-center justify-center rounded-full cursor-pointer"
                     />
                 </div>
@@ -96,11 +96,11 @@ const Home = () => {
                     <Blob containerStyles="w-[560px] h-[560px]" />
                     {/* ============== AVATAR =============== */}
                     <Image
-                        src={avatarImg}
                         alt="avatar"
                         width={400}
                         height={700}
                         quality={100}
+                        src={avatarImg}
                         className="absolute top-[50px] left-[100px]"
                     />
 
