@@ -50,17 +50,21 @@ const Header = () => {
                             {/* ============== LINKS =============== */}
                             <NavLinks containerStyles="flex flex-col gap-8 max-w-[100px]" />
 
-                            {/* ============= BUTTON =============== */}
                             <div>
-                                <button className="btn btn-lg btn-tertiary mb-16">
+                                {/* ============= BUTTON =============== */}
+                                <a
+                                    download
+                                    className="btn btn-lg btn-tertiary mb-16 mx-2"
+                                    href="/assets/NAUFAL-FADHIL-IHSAN-FIKRI-ASH-SHIDQI.pdf"
+                                >
                                     <div className="flex items-center gap-3">
-                                        <span>Downlaod CV</span>
+                                        <span>Download CV</span>
                                         <MdFileDownload className="text-xl" />
                                     </div>
-                                </button>
+                                </a>
                                 {/* =============== SOCIALS =============== */}
                                 <Socials
-                                    containerStyles="flex gap-4"
+                                    containerStyles="flex gap-3 xl:gap-4"
                                     iconStyles="bg-accent text-white hover:bg-accent-hover transition w-[40px] h-[40px] text-[20px] flex items-center justify-center rounded-full cursor-pointer"
                                 />
                             </div>

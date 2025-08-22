@@ -16,9 +16,9 @@ const MainNav = () => {
 
                 {/* ============= BUTTON =============== */}
                 <a
-                    href="/assets/NAUFAL-FADHIL-IHSAN-FIKRI-ASH-SHIDQI.pdf"
                     download
                     className="btn btn-lg btn-tertiary mb-16"
+                    href="/assets/NAUFAL-FADHIL-IHSAN-FIKRI-ASH-SHIDQI.pdf"
                 >
                     <div className="flex items-center gap-3">
                         <span>Download CV</span>

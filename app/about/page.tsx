@@ -52,7 +52,7 @@ const Home = () => {
 
                     {/* ============== SCROLL AREA =============== */}
                     <ScrollArea className="w-full h-[680px]">
-                        <div>
+                        <div className="my-14 xl:my-0">
                             {/* ============== INDICATOR =============== */}
                             <div className="flex items-center gap-3 mb-4">
                                 <div className="w-2 h-2 bg-accent rounded-full" />

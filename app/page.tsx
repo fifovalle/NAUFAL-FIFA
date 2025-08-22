@@ -29,7 +29,7 @@ const Home = () => {
                 <Pattern />
 
                 {/* ============== TEXT =============== */}
-                <div className="w-full xl:w-[550px] flex flex-col items-center xl:items-start text-center xl:text-left">
+                <div className="w-full xl:w-[550px] flex flex-col items-center xl:items-start text-center xl:text-left mt-18 xl:mt-0">
                     <h1 className="h1 flex-1 mb-[28px]">
                         Hi! I&apos;m Naufal,{" "}
                         <TypeAnimation

@@ -74,7 +74,7 @@ const Home = () => {
                                         .map((project) => (
                                             <SwiperSlide
                                                 key={project.id}
-                                                className="h-full cursor-grab"
+                                                className="h-full cursor-grab mb-10 xl:mb-0"
                                             >
                                                 <div className="flex flex-col xl:flex-row gap-8 xl:gap-12">
                                                     {/* =============== PROJECT INFO ================ */}

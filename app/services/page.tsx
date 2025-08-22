@@ -27,7 +27,7 @@ const Home = () => {
                 {/* =============== TEXT ================ */}
                 <div className="flex flex-col xl:flex-row justify-between items-start xl:items-center gap-6">
                     {/* =============== HEADLINE ================ */}
-                    <h2 className="h2 max-w-[500px] text-left xl:mb-0">
+                    <h2 className="h2 max-w-[500px] text-left xl:mb-0 mt-4 xl:mt-0">
                         Custom{" "}
                         <span className="text-accent">
                             Web & Mobile Solutions
