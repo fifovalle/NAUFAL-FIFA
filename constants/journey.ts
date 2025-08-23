@@ -64,7 +64,7 @@ export const journey = [
     // --- 2022 ---
     {
         years: "2022 - Present",
-        role: "Undergraduate Student in Informatics",
+        role: "Student in Informatics",
         institution: "Universitas Jenderal Achmad Yani (Unjani)",
         gallery: [],
     },

@@ -82,7 +82,7 @@ const Journey = () => {
 
                             {/* ============== GALLERY ================ */}
                             {item.gallery && item.gallery.length > 0 && (
-                                <div className="grid grid-cols-2 gap-3 mt-4">
+                                <div className="grid grid-cols-2 gap-3 mt-4 px-2 xl:px-0">
                                     {item.gallery
                                         .slice(0, maxVisible)
                                         .map((img, i) => (
