@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Link from "next/link";
 import Image from "next/image";
 import { Pagination } from "swiper/modules";
 import { motion, easeIn } from "framer-motion";
@@ -36,9 +37,12 @@ const Home = () => {
                     </h2>
 
                     {/* =============== BUTTON ================ */}
-                    <button className="btn btn-lg btn-accent flex gap-2">
-                        All services <MdArrowRightAlt className="text-2xl" />
-                    </button>
+                    <Link
+                        href="/contact"
+                        className="btn btn-lg btn-accent flex gap-2"
+                    >
+                        Let’s Talk <MdArrowRightAlt className="text-2xl" />
+                    </Link>
                 </div>
 
                 {/* ============== SLIDER ================ */}
@@ -67,9 +71,12 @@ const Home = () => {
                                         src={service.icon}
                                         alt={service.title}
                                     />
-                                    <div className="w-12 h-12 rounded-full bg-accent flex items-center justify-center cursor-pointer text-2xl hover:rotate-45 transition-all">
+                                    <Link
+                                        href={service.href}
+                                        className="w-12 h-12 rounded-full bg-accent flex items-center justify-center cursor-pointer text-2xl hover:rotate-45 transition-all"
+                                    >
                                         <MdOutlineArrowOutward />
-                                    </div>
+                                    </Link>
                                 </div>
                                 <h5 className="text-[22px] font-medium max-w-[240px]">
                                     {service.title}

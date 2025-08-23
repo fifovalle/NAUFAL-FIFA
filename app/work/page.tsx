@@ -57,7 +57,11 @@ const Home = () => {
                     {/* =============== TABS CONTENT ================ */}
                     <div className="h-[400px] scrollbar scrollbar-thumb-accent scrollbar-track-accent/5 overflow-y-scroll xl:overflow-y-visible">
                         {categories.map((category) => (
-                            <TabsContent key={category} value={category}>
+                            <TabsContent
+                                key={category}
+                                value={category}
+                                className="mb-10 xl:mb-0"
+                            >
                                 <Swiper
                                     modules={[Pagination]}
                                     pagination={{
