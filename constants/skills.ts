@@ -57,16 +57,16 @@ export const frontendSkills: SkillsProps[] = [
 export const backendSkills: SkillsProps[] = [
     { icon: SiNestjs, name: "Nest.js" },
     { icon: SiLaravel, name: "Laravel" },
-    { icon: SiFirebase, name: "Firebase" },
     { icon: RiNodejsFill, name: "Node.js" },
     { icon: SiExpress, name: "Express.js" },
-    { icon: RiSupabaseFill, name: "Supabase" },
 ];
 
 // ========== DATABASE ==========
 export const databases: SkillsProps[] = [
     { icon: SiMysql, name: "MySQL" },
     { icon: SiMongodb, name: "MongoDB" },
+    { icon: SiFirebase, name: "Firebase" },
+    { icon: RiSupabaseFill, name: "Supabase" },
     { icon: SiPostgresql, name: "PostgreSQL" },
 ];
 
