@@ -2,6 +2,7 @@ import {
     SiC,
     SiGit,
     SiPhp,
+    SiDart,
     SiExpo,
     SiMysql,
     SiDocker,
@@ -13,6 +14,7 @@ import {
     SiExpress,
     SiArduino,
     SiFirebase,
+    SiFlutter,
     SiCplusplus,
     SiEspressif,
     SiJavascript,
@@ -30,7 +32,6 @@ import {
     RiTailwindCssFill,
 } from "react-icons/ri";
 
-// Interface
 import { SkillsProps } from "@/interfaces/skills-props";
 
 // ========== LANGUAGES ==========
@@ -40,16 +41,17 @@ export const languages: SkillsProps[] = [
     { icon: SiCplusplus, name: "C++" },
     { icon: SiJavascript, name: "JavaScript" },
     { icon: SiTypescript, name: "TypeScript" },
+    { icon: SiDart, name: "Dart" },
 ];
 
-// ========== FRONTEND SKILLS ==========
+// ========== FRONTEND / MOBILE SKILLS ==========
 export const frontendSkills: SkillsProps[] = [
-    { icon: SiExpo, name: "Expo" },
     { icon: RiCss3Fill, name: "CSS" },
     { icon: RiHtml5Fill, name: "HTML" },
     { icon: RiReactjsFill, name: "React" },
     { icon: RiNextjsFill, name: "Next.js" },
     { icon: RiReactjsFill, name: "React Native" },
+    { icon: SiFlutter, name: "Flutter" },
     { icon: RiTailwindCssFill, name: "Tailwind CSS" },
 ];
 
