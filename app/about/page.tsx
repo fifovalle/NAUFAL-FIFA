@@ -64,11 +64,20 @@ const Home = () => {
                                 <span className="text-accent">Naufal</span> FIFA
                             </h2>
                             <p className="max-w-[540px] mb-12">
-                                I am a web developer with a passion for creating
-                                beautiful and functional websites. I have
-                                experience working on a wide range of projects,
-                                from small personal projects to large-scale web
-                                applications.
+                                I am a Full-Stack Developer passionate about
+                                building modern, scalable, and user-friendly
+                                solutions for both{" "}
+                                <span className="text-accent font-semibold">
+                                    Web
+                                </span>{" "}
+                                and{" "}
+                                <span className="text-accent font-semibold">
+                                    Mobile
+                                </span>{" "}
+                                platforms. My experience ranges from crafting
+                                elegant personal projects to developing robust,
+                                large-scale applications that deliver seamless
+                                user experiences.
                             </p>
 
                             {/* ============= MORE DESCRIPTION =============== */}

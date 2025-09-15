@@ -38,6 +38,7 @@ export const journey = [
         institution:
             "Indonesian Agency for Meteorology, Climatology, and Geophysics (BMKG)",
         gallery: [
+            "/assets/journey/meteorological-station-certificate.jpg",
             "/assets/journey/geophysical-station-certificate.jpeg",
             "/assets/journey/climatological-station-certificate.jpg",
             "/assets/journey/geophysical-station-certificate-2.jpeg",
