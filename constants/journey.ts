@@ -1,6 +1,6 @@
 export const journey = [
     {
-        years: "Jul 2025 - Present",
+        years: "Aug 2025 - Present",
         role: "Fullstack Developer",
         institution: "PT. Indonesia Tekno Kreatif",
         gallery: [],
