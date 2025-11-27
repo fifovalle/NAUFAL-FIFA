@@ -88,7 +88,7 @@ export const projects = [
   {
     id: 7,
     category: "fullstack",
-    title: "System Monitoring Kompetensi Rescuer",
+    title: "Rescuer Competency System Monitoring",
     image: "/assets/work/thum7.png",
     link: "https://simorebengkulu.com/",
     github: "",
@@ -97,8 +97,7 @@ export const projects = [
   {
     id: 8,
     category: "fullstack",
-    title:
-      "Digital Info & Communication Monitoring System – Curup II Education Office",
+    title: "Digital Info Monitor – Curup II Edu",
     image: "/assets/work/thum8.png",
     link: "https://cabdindikwil-2.vercel.app/Beranda",
     github: "",
