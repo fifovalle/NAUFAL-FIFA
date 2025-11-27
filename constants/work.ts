@@ -100,7 +100,7 @@ export const projects = [
     title:
       "Digital Info & Communication Monitoring System – Curup II Education Office",
     image: "/assets/work/thum8.png",
-    link: "",
+    link: "https://cabdindikwil-2.vercel.app/Beranda",
     github: "",
     tech: [
       "React",
