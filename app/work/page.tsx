@@ -128,6 +128,7 @@ const Home = () => {
                           {/* =============== PROJECT IMAGE ================ */}
                           <div className="w-full h-[200px] md:h-[300px] xl:h-[400px] relative bg-pink-50/10 order-1 xl:order-0 rounded-lg overflow-hidden">
                             <Image
+                              priority
                               src={project.image}
                               alt={project.title}
                               fill
