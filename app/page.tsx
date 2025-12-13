@@ -51,10 +51,10 @@ const Home = () => {
             />
           </h1>
           <p className="max-w-125 mb-11 text-center xl:text-justify">
-            I am a Fullstack Cross-Platform Developer with extensive experience
-            in building responsive websites, modern web applications, and mobile
-            solutions. I focus on writing clean, maintainable, and scalable code
-            to deliver professional-grade software.
+            I am a Full-Stack Cross-Platform Developer with a strong focus on
+            system architecture and scalability, building reliable web and
+            mobile applications used in real-world environments. I write clean,
+            maintainable code and take ownership from design to deployment.
           </p>
 
           {/* ============== BUTTONS =============== */}

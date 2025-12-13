@@ -64,13 +64,15 @@ const Home = () => {
                 <span className="text-accent">Naufal</span> FIFA
               </h2>
               <p className="max-w-135 mb-12">
-                I am a Full-Stack Developer passionate about building modern,
-                scalable, and user-friendly solutions for both{" "}
+                I am a Full-Stack Cross-Platform Developer passionate about
+                designing and building modern, scalable, and user-focused
+                solutions for{" "}
                 <span className="text-accent font-semibold">Web</span> and{" "}
                 <span className="text-accent font-semibold">Mobile</span>{" "}
-                platforms. My experience ranges from crafting elegant personal
-                projects to developing robust, large-scale applications that
-                deliver seamless user experiences.
+                platforms. My work spans from crafting well-structured personal
+                projects to delivering production-ready, large-scale
+                applications with a strong focus on performance, architecture,
+                and seamless user experiences.
               </p>
 
               {/* ============= MORE DESCRIPTION =============== */}
