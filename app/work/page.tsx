@@ -15,7 +15,7 @@ import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import { projects } from "@/constants/work";
 
 const Home = () => {
-  const categories = ["frontend", "fullstack", "Iot"];
+  const categories = ["static", "dynamic"];
 
   return (
     <motion.section
@@ -28,13 +28,13 @@ const Home = () => {
     >
       <div className="container mx-auto w-full h-full flex flex-col justify-center">
         {/* HEADING */}
-        <h2 className="h2 mb-6 xl:mb-12 max-w-[600px]">
+        <h2 className="h2 mb-6 xl:mb-12 max-w-150">
           My Latest <span className="text-accent">Work</span>
         </h2>
 
         {/* TABS */}
         <Tabs
-          defaultValue="frontend"
+          defaultValue="static"
           className="w-full flex flex-col gap-6 xl:gap-12"
         >
           {/* TABS LIST */}
@@ -45,13 +45,13 @@ const Home = () => {
                 value={category}
                 className="capitalize border border-white/10 data-[state=active]:bg-accent data-[state=active]:border-accent h-12 px-6 rounded-full cursor-pointer"
               >
-                {category === "Iot" ? "Internet of Things" : category}
+                {category}
               </TabsTrigger>
             ))}
           </TabsList>
 
           {/* TABS CONTENT */}
-          <div className="h-[400px] scrollbar scrollbar-thumb-accent scrollbar-track-accent/5 overflow-y-scroll xl:overflow-y-visible">
+          <div className="h-100 scrollbar scrollbar-thumb-accent scrollbar-track-accent/5 overflow-y-scroll xl:overflow-y-visible">
             {categories.map((category) => {
               const filteredProjects = projects.filter(
                 (project) => project.category === category
@@ -64,7 +64,7 @@ const Home = () => {
                   className="mb-10 xl:mb-0"
                 >
                   {filteredProjects.length === 0 ? (
-                    <div className="flex flex-col items-center justify-center h-[300px] text-center text-gray-400">
+                    <div className="flex flex-col items-center justify-center h-75 text-center text-gray-400">
                       <p className="text-lg">
                         No projects available in this category yet.
                       </p>
@@ -73,7 +73,7 @@ const Home = () => {
                     <Swiper
                       modules={[Pagination]}
                       pagination={{ clickable: true, dynamicBullets: true }}
-                      className="h-max xl:h-[460px]"
+                      className="h-max xl:h-115"
                     >
                       {filteredProjects.map((project) => (
                         <SwiperSlide
@@ -82,9 +82,9 @@ const Home = () => {
                         >
                           <div className="flex flex-col xl:flex-row gap-8 xl:gap-12">
                             {/* PROJECT INFO */}
-                            <div className="w-full max-w-[380px] flex flex-col gap-6 xl:gap-8 xl:pt-6 order-2 xl:order-0">
+                            <div className="w-full max-w-95 flex flex-col gap-6 xl:gap-8 xl:pt-6 order-2 xl:order-0">
                               <h3 className="h3">{project.title}</h3>
-                              <div className="xl:mb-4 max-w-[300px] min-h-[130px]">
+                              <div className="xl:mb-4 max-w-75 min-h-32.5">
                                 <p className="mb-4">Technologies Used</p>
                                 <ul className="flex flex-wrap gap-4">
                                   {project.tech.map((item, index) => (

@@ -29,7 +29,7 @@ const Home = () => {
         <Pattern />
 
         {/* ============== TEXT =============== */}
-        <div className="w-full xl:w-[550px] flex flex-col items-center xl:items-start text-center xl:text-left mt-18 xl:mt-0">
+        <div className="w-full xl:w-137.5 flex flex-col items-center xl:items-start text-center xl:text-left mt-18 xl:mt-0">
           <h1 className="h1 flex-1 mb-7">
             Hi! I&apos;m Naufal,{" "}
             <TypeAnimation
@@ -47,10 +47,10 @@ const Home = () => {
               wrapper="span"
               cursor={false}
               repeat={Infinity}
-              className="text-accent inline-block min-w-[400px]"
+              className="text-accent inline-block min-w-100"
             />
           </h1>
-          <p className="max-w-[500px] mb-11 text-center xl:text-justify">
+          <p className="max-w-125 mb-11 text-center xl:text-justify">
             I am a Fullstack Cross-Platform Developer with extensive experience
             in building responsive websites, modern web applications, and mobile
             solutions. I focus on writing clean, maintainable, and scalable code
@@ -101,11 +101,11 @@ const Home = () => {
             height={700}
             quality={100}
             src={avatarImg}
-            className="absolute top-[50px] left-[100px]"
+            className="absolute top-12.5 left-25"
           />
 
           {/* ============== OVERLAY GRADIENT =============== */}
-          <div className="w-full h-[164px] absolute -bottom-28 left-0 right-0 bg-linear-to-t from-primary via-primary/90 to-primary" />
+          <div className="w-full h-41 absolute -bottom-28 left-0 right-0 bg-linear-to-t from-primary via-primary/90 to-primary" />
         </div>
       </div>
     </motion.section>

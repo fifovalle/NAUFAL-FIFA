@@ -52,11 +52,11 @@ const AudioPlayer = () => {
         whileHover={{ scale: 1.1 }}
       >
         {isPlaying ? (
-          <div className="flex gap-[3px] items-end">
+          <div className="flex gap-0.75 items-end">
             {[1, 2, 3].map((bar) => (
               <motion.div
                 key={bar}
-                className="w-0.5 h-1.5 sm:w-[3px] sm:h-2 md:w-1 md:h-3 bg-linear-to-t from-purple-500 to-pink-400 rounded-sm"
+                className="w-0.5 h-1.5 sm:w-0.75 sm:h-2 md:w-1 md:h-3 bg-linear-to-t from-purple-500 to-pink-400 rounded-sm"
                 animate={{
                   height: ["6px", "14px", "8px", "12px"],
                 }}

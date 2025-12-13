@@ -14,7 +14,7 @@ const Testimonial = () => {
     <Swiper
       loop={false}
       autoplay={{ delay: 4000, disableOnInteraction: false }}
-      className="w-full max-w-[310px] md:max-w-[520px] bg-secondary rounded-lg"
+      className="w-full max-w-77.5 md:max-w-130 bg-secondary rounded-lg"
     >
       {testimonial.map((person, index) => (
         <SwiperSlide key={index}>

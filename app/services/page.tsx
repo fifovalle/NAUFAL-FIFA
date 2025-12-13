@@ -27,7 +27,7 @@ const Home = () => {
         {/* =============== TEXT ================ */}
         <div className="flex flex-col xl:flex-row justify-between items-start xl:items-center gap-6">
           {/* =============== HEADLINE ================ */}
-          <h2 className="h2 max-w-[500px] text-left xl:mb-0 mt-4 xl:mt-0">
+          <h2 className="h2 max-w-125 text-left xl:mb-0 mt-4 xl:mt-0">
             Custom <span className="text-accent">Web & Mobile Solutions</span>{" "}
             to Boost Your Business
           </h2>
@@ -56,7 +56,7 @@ const Home = () => {
         >
           {services.map((service, index) => (
             <SwiperSlide key={index}>
-              <div className="bg-secondary/90 w-full h-[284px] rounded-[20px] px-[30px] py-10 flex flex-col justify-between cursor-grab">
+              <div className="bg-secondary/90 w-full h-71 rounded-[20px] px-7.5 py-10 flex flex-col justify-between cursor-grab">
                 <div className="flex items-center justify-between mb-12">
                   <Image
                     width={48}

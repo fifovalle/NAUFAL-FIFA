@@ -10,7 +10,7 @@ const Info = () => {
     <div className="flex flex-col gap-6 md:gap-10">
       {/* ============== PERSONAL INFO 1 =============== */}
       <div className="flex flex-col md:flex-row gap-4">
-        <div className="w-[280px] flex items-start gap-4">
+        <div className="w-70 flex items-start gap-4">
           <HiOutlineUser className="text-2xl mt-1 text-accent" />
           <div>
             <p className="text-lg">Date of Birth</p>
@@ -18,7 +18,7 @@ const Info = () => {
           </div>
         </div>
 
-        <div className="w-[280px] flex items-start gap-4">
+        <div className="w-70 flex items-start gap-4">
           <HiOutlineMail className="text-2xl mt-1 text-accent" />
           <div>
             <p className="text-lg">Email Address</p>
@@ -29,7 +29,7 @@ const Info = () => {
 
       {/* ============ PERSONAL INFO 2 =============== */}
       <div className="flex flex-col md:flex-row gap-4">
-        <div className="w-[280px] flex items-start gap-4">
+        <div className="w-70 flex items-start gap-4">
           <HiOutlinePhone className="text-2xl mt-1 text-accent" />
           <div>
             <p className="text-lg">Phone</p>
@@ -37,7 +37,7 @@ const Info = () => {
           </div>
         </div>
 
-        <div className="w-[280px] flex items-start gap-4">
+        <div className="w-70 flex items-start gap-4">
           <HiOutlineLocationMarker className="text-2xl mt-1 text-accent" />
           <div>
             <p className="text-lg">Location</p>

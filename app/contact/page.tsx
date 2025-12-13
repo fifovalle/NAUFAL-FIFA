@@ -56,13 +56,13 @@ const Home = () => {
         <div className="w-full">
           <div className="flex flex-col xl:flex-row gap-6">
             {/* ============== INFO TEXT =============== */}
-            <div className="flex-1 xl:w-[600px] flex flex-col gap-12">
+            <div className="flex-1 xl:w-150 flex flex-col gap-12">
               {/* ============== TEXT =============== */}
               <div>
                 <h2 className="h2 mb-6">
                   Get In <span className="text-accent">Touch</span>
                 </h2>
-                <p className="max-w-[460px]">
+                <p className="max-w-115">
                   Fill up the form and my team will get in touch shortly.
                 </p>
               </div>

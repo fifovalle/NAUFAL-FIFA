@@ -44,7 +44,7 @@ const Journey = () => {
                 className={`w-px bg-white/10
                                 ${
                                   item.gallery && item.gallery.length > 0
-                                    ? "h-[300px]"
+                                    ? "h-75"
                                     : "h-40"
                                 }
                                 ${
@@ -54,7 +54,7 @@ const Journey = () => {
             </div>
 
             {/* ============== TEXT ================ */}
-            <div className="max-w-[500px]">
+            <div className="max-w-125">
               <p
                 className={`mb-3 text-lg ${
                   isPresent ? "text-green-500 font-semibold" : "text-white/50"

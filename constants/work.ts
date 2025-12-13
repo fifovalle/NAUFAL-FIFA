@@ -1,7 +1,7 @@
 export const projects = [
   {
     id: 1,
-    category: "frontend",
+    category: "static",
     title: "Bhinneka Dev – Developer Portfolio Website",
     image: "/assets/work/thum1.jpeg",
     link: "https://bhinneka-dev.vercel.app/",
@@ -10,7 +10,7 @@ export const projects = [
   },
   {
     id: 2,
-    category: "fullstack",
+    category: "dynamic",
     title: "BMKG Bengkulu Guest Book",
     image: "/assets/work/thum2.png",
     link: "https://bukutamu-bengkulu.devbmkg.my.id/",
@@ -27,7 +27,7 @@ export const projects = [
   },
   {
     id: 3,
-    category: "fullstack",
+    category: "dynamic",
     title: "Local Geophysics Database of Bengkulu",
     image: "/assets/work/thum3.png",
     link: "",
@@ -44,7 +44,7 @@ export const projects = [
   },
   {
     id: 4,
-    category: "frontend",
+    category: "static",
     title: "Met Flight Radar – Meteorological Radar Integration System",
     image: "/assets/work/thum4.png",
     link: "https://metflightradar-bengkulu.devbmkg.my.id/",
@@ -53,7 +53,7 @@ export const projects = [
   },
   {
     id: 5,
-    category: "fullstack",
+    category: "dynamic",
     title: "PTSP – Online Service Management System",
     image: "/assets/work/thum5.png",
     link: "https://ptsp-bengkulu.devbmkg.my.id/Beranda",
@@ -70,7 +70,7 @@ export const projects = [
   },
   {
     id: 6,
-    category: "fullstack",
+    category: "dynamic",
     title: "Online Climatology Organizational Structure",
     image: "/assets/work/thum6.png",
     link: "",
@@ -87,7 +87,7 @@ export const projects = [
   },
   {
     id: 7,
-    category: "fullstack",
+    category: "dynamic",
     title: "Rescuer Competency System Monitoring",
     image: "/assets/work/thum7.png",
     link: "https://simorebengkulu.com/",
@@ -96,7 +96,7 @@ export const projects = [
   },
   {
     id: 8,
-    category: "fullstack",
+    category: "dynamic",
     title: "Digital Info Monitor – Curup II Edu",
     image: "/assets/work/thum8.png",
     link: "https://cabdindikwil-2.vercel.app/Beranda",

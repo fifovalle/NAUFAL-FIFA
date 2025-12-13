@@ -23,9 +23,9 @@ const Home = () => {
       className="h-screen flex items-center"
     >
       <div className="container mx-auto px-0">
-        <div className="flex flex-col xl:flex-row items-center gap-24 w-full h-[680px]">
+        <div className="flex flex-col xl:flex-row items-center gap-24 w-full h-170">
           {/* ============== IMAGE & SOSIAL ICONS =============== */}
-          <div className="hidden xl:flex flex-col w-full h-full pt-14 max-w-[430px] relative">
+          <div className="hidden xl:flex flex-col w-full h-full pt-14 max-w-107.5 relative">
             <Image
               priority
               alt="Naufal"
@@ -36,7 +36,7 @@ const Home = () => {
             />
 
             {/* ============= OVERLAY =============== */}
-            <div className="w-full h-[60px] absolute top-[485px] left-0 right-0 bg-linear-to-t from-primary via-primary z-30" />
+            <div className="w-full h-15 absolute top-121.25 left-0 right-0 bg-linear-to-t from-primary via-primary z-30" />
 
             {/* ============= BLOB =============== */}
             <div className="absolute top-20 -left-20 z-10">
@@ -51,7 +51,7 @@ const Home = () => {
           </div>
 
           {/* ============== SCROLL AREA =============== */}
-          <ScrollArea className="w-full h-[680px]">
+          <ScrollArea className="w-full h-170">
             <div className="my-14 xl:my-0">
               {/* ============== INDICATOR =============== */}
               <div className="flex items-center gap-3 mb-4">
@@ -63,7 +63,7 @@ const Home = () => {
               <h2 className="h2 mb-6">
                 <span className="text-accent">Naufal</span> FIFA
               </h2>
-              <p className="max-w-[540px] mb-12">
+              <p className="max-w-135 mb-12">
                 I am a Full-Stack Developer passionate about building modern,
                 scalable, and user-friendly solutions for both{" "}
                 <span className="text-accent font-semibold">Web</span> and{" "}
