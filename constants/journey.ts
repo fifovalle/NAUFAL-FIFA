@@ -2,7 +2,7 @@ export const journey = [
   {
     years: "Sep 2025 - Present",
     role: "Full Stack Developer",
-    institution: "PT. Indonesia Tekno Kreatif",
+    institution: "elKopra",
     gallery: [],
   },
   {
