@@ -20,10 +20,45 @@ import {
 const Home = () => {
   const formRef = useRef<HTMLFormElement | null>(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [serviceValue, setServiceValue] = useState<string>("");
 
   const sendEmail = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
+
+    if (!formRef.current) return;
+
+    const firstname = formRef.current.firstname.value.trim();
+    const lastname = formRef.current.lastname.value.trim();
+    const email = formRef.current.email.value.trim();
+    const service = serviceValue;
+    const message = formRef.current.message.value.trim();
+
+    if (!firstname) {
+      toast.error("Please fill in your first name!");
+      setIsSubmitting(false);
+      return;
+    }
+    if (!lastname) {
+      toast.error("Please fill in your last name!");
+      setIsSubmitting(false);
+      return;
+    }
+    if (!email) {
+      toast.error("Please fill in your email!");
+      setIsSubmitting(false);
+      return;
+    }
+    if (!service) {
+      toast.error("Please select a service!");
+      setIsSubmitting(false);
+      return;
+    }
+    if (!message) {
+      toast.error("Please write your message!");
+      setIsSubmitting(false);
+      return;
+    }
 
     try {
       await emailjs.sendForm(
@@ -33,11 +68,12 @@ const Home = () => {
         "m1L6EO-wdPJLc4zNG"
       );
 
-      toast.success("Pesan berhasil dikirim!");
+      toast.success("Thank you for your message!");
       formRef.current?.reset();
+      setServiceValue("");
     } catch (err) {
       console.error("Email sending error:", err);
-      toast.error("Terjadi kesalahan, coba lagi.");
+      toast.error("Something went wrong, please try again!");
     } finally {
       setIsSubmitting(false);
     }
@@ -57,7 +93,6 @@ const Home = () => {
           <div className="flex flex-col xl:flex-row gap-6">
             {/* ============== INFO TEXT =============== */}
             <div className="flex-1 xl:w-150 flex flex-col gap-12">
-              {/* ============== TEXT =============== */}
               <div>
                 <h2 className="h2 mb-6">
                   Get In <span className="text-accent">Touch</span>
@@ -67,9 +102,7 @@ const Home = () => {
                 </p>
               </div>
 
-              {/* ============== INFO =============== */}
               <div className="flex flex-col gap-8 mb-6 xl:mb-0">
-                {/* =============== PHONE =============== */}
                 <div className="flex items-center gap-4 text-lg">
                   <span className="text-accent">
                     <HiOutlinePhone className="text-2xl" />
@@ -77,7 +110,6 @@ const Home = () => {
                   <span>+62 823-1833-4287</span>
                 </div>
 
-                {/* =============== EMAIL =============== */}
                 <div className="flex items-center gap-4 text-lg">
                   <span className="text-accent">
                     <HiOutlineMail className="text-2xl" />
@@ -85,7 +117,6 @@ const Home = () => {
                   <span>fifanaufal10@gmail.com</span>
                 </div>
 
-                {/* =============== LOCATION =============== */}
                 <div className="flex items-center gap-4 text-lg">
                   <span className="text-accent">
                     <HiOutlineMapPin className="text-2xl" />
@@ -102,14 +133,12 @@ const Home = () => {
                 onSubmit={sendEmail}
                 className="flex flex-col gap-6 items-start"
               >
-                {/* ============== FIRSTNAME & LASTNAME =============== */}
                 <div className="flex flex-col xl:flex-row gap-6 w-full">
                   <div className="w-full">
-                    <Label htmlFor="name">
+                    <Label htmlFor="firstname">
                       Firstname <span className="text-accent">*</span>
                     </Label>
                     <Input
-                      required
                       id="firstname"
                       name="firstname"
                       placeholder="First name"
@@ -117,11 +146,10 @@ const Home = () => {
                   </div>
 
                   <div className="w-full">
-                    <Label htmlFor="name">
+                    <Label htmlFor="lastname">
                       Lastname <span className="text-accent">*</span>
                     </Label>
                     <Input
-                      required
                       id="lastname"
                       name="lastname"
                       placeholder="Last name"
@@ -129,26 +157,27 @@ const Home = () => {
                   </div>
                 </div>
 
-                {/* ============== EMAIL =============== */}
                 <div className="w-full">
-                  <Label htmlFor="name">
+                  <Label htmlFor="email">
                     Email <span className="text-accent">*</span>
                   </Label>
                   <Input
-                    required
                     id="email"
                     name="email"
-                    placeholder="youremial@gmail.com"
+                    placeholder="youremail@gmail.com"
                   />
                 </div>
 
-                {/* ============== SELECT =============== */}
                 <div className="w-full">
-                  <Label htmlFor="name">
-                    I&apos;m interested in
+                  <Label htmlFor="service">
+                    I&apos;m interested in{" "}
                     <span className="text-accent">*</span>
                   </Label>
-                  <Select name="service" required>
+                  <Select
+                    name="service"
+                    value={serviceValue}
+                    onValueChange={(val) => setServiceValue(val)}
+                  >
                     <SelectTrigger
                       id="service"
                       className="w-full h-12! bg-white/5 border-white/10 px-4"
@@ -156,27 +185,22 @@ const Home = () => {
                       <SelectValue placeholder="Choose here" />
                     </SelectTrigger>
                     <SelectContent className="bg-black border-white/20">
-                      <SelectItem value="Web Development">
-                        Web Development
+                      <SelectItem value="Simple Website">
+                        Simple Website
                       </SelectItem>
-                      <SelectItem value="Mobile Development">
-                        Mobile Development
+                      <SelectItem value="Interactive Website">
+                        Interactive Website
                       </SelectItem>
-                      <SelectItem value="Internet of Things">
-                        Internet of Things
-                      </SelectItem>
+                      <SelectItem value="Mobile App">Mobile App</SelectItem>
                     </SelectContent>
                   </Select>
                 </div>
 
-                {/* ============== TEXT AREA =============== */}
                 <div className="w-full">
-                  <Label htmlFor="name">
-                    Message
-                    <span className="text-accent">*</span>
+                  <Label htmlFor="message">
+                    Message <span className="text-accent">*</span>
                   </Label>
                   <Textarea
-                    required
                     id="message"
                     name="message"
                     placeholder="Write your message..."
@@ -184,7 +208,6 @@ const Home = () => {
                   />
                 </div>
 
-                {/* ============== BTN =============== */}
                 <button
                   type="submit"
                   disabled={isSubmitting}
