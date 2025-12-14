@@ -1,4 +1,7 @@
 export const projects = [
+  // =========================
+  // STATIC PROJECTS
+  // =========================
   {
     id: 1,
     category: "static",
@@ -9,7 +12,37 @@ export const projects = [
     tech: ["React", "Next.js", "TypeScript", "Tailwind CSS"],
   },
   {
+    id: 4,
+    category: "static",
+    title: "Met Flight Radar – Meteorological Radar Integration System",
+    image: "/assets/work/thum4.png",
+    link: "https://metflightradar-bengkulu.devbmkg.my.id/",
+    github: "",
+    tech: ["React", "Next.js", "Rest API", "TypeScript", "Tailwind CSS"],
+  },
+
+  // =========================
+  // DYNAMIC PROJECTS
+  // =========================
+  {
     id: 2,
+    category: "dynamic",
+    title: "Digital Info Monitor – Curup II Edu",
+    image: "/assets/work/thum8.png",
+    link: "https://cabdindikwil-2.vercel.app/Beranda",
+    github: "",
+    tech: [
+      "React",
+      "Next.js",
+      "Nest.js",
+      "Node.js",
+      "Supabase",
+      "TypeScript",
+      "Tailwind CSS",
+    ],
+  },
+  {
+    id: 3,
     category: "dynamic",
     title: "BMKG Bengkulu Guest Book",
     image: "/assets/work/thum2.png",
@@ -26,7 +59,7 @@ export const projects = [
     ],
   },
   {
-    id: 3,
+    id: 5,
     category: "dynamic",
     title: "Local Geophysics Database of Bengkulu",
     image: "/assets/work/thum3.png",
@@ -43,16 +76,7 @@ export const projects = [
     ],
   },
   {
-    id: 4,
-    category: "static",
-    title: "Met Flight Radar – Meteorological Radar Integration System",
-    image: "/assets/work/thum4.png",
-    link: "https://metflightradar-bengkulu.devbmkg.my.id/",
-    github: "",
-    tech: ["React", "Next.js", "Rest API", "TypeScript", "Tailwind CSS"],
-  },
-  {
-    id: 5,
+    id: 6,
     category: "dynamic",
     title: "PTSP – Online Service Management System",
     image: "/assets/work/thum5.png",
@@ -69,7 +93,7 @@ export const projects = [
     ],
   },
   {
-    id: 6,
+    id: 7,
     category: "dynamic",
     title: "Online Climatology Organizational Structure",
     image: "/assets/work/thum6.png",
@@ -86,29 +110,12 @@ export const projects = [
     ],
   },
   {
-    id: 7,
+    id: 8,
     category: "dynamic",
     title: "Rescuer Competency System Monitoring",
     image: "/assets/work/thum7.png",
     link: "https://simorebengkulu.com/",
     github: "",
     tech: ["PHP", "MySQL"],
-  },
-  {
-    id: 8,
-    category: "dynamic",
-    title: "Digital Info Monitor – Curup II Edu",
-    image: "/assets/work/thum8.png",
-    link: "https://cabdindikwil-2.vercel.app/Beranda",
-    github: "",
-    tech: [
-      "React",
-      "Next.js",
-      "Nest.js",
-      "Node.js",
-      "Supabase",
-      "TypeScript",
-      "Tailwind CSS",
-    ],
   },
 ];
