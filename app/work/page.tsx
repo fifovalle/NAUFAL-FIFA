@@ -15,7 +15,7 @@ import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import { projects } from "@/constants/work";
 
 const Home = () => {
-  const categories = ["static", "dynamic"];
+  const categories = ["static", "dynamic", "digital-product"];
 
   return (
     <motion.section

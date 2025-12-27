@@ -1,5 +1,18 @@
 export const projects = [
   // =========================
+  // DIGITAL PRODUCT PROJECTS
+  // =========================
+  {
+    id: 9,
+    category: "digital-product",
+    title: "Nest Saas Backend PostgreSQL",
+    image: "/assets/work/thum9.png",
+    link: "https://nestjs-saas-backend-postgres.kodevara.my.id/",
+    github: "",
+    tech: ["Nest.js", "PostgreSQL", "TypeScript", "Docker", "Rest API"],
+  },
+
+  // =========================
   // STATIC PROJECTS
   // =========================
   {
