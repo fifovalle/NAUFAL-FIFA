@@ -29,7 +29,7 @@ export const projects = [
     category: "static",
     title: "Met Flight Radar – Meteorological Radar Integration System",
     image: "/assets/work/thum4.png",
-    link: "https://metflightradar-bengkulu.devbmkg.my.id/",
+    link: "https://metflightradar-bengkulu.bmkg.go.id/",
     github: "",
     tech: ["React", "Next.js", "Rest API", "TypeScript", "Tailwind CSS"],
   },
@@ -59,7 +59,7 @@ export const projects = [
     category: "dynamic",
     title: "BMKG Bengkulu Guest Book",
     image: "/assets/work/thum2.png",
-    link: "https://bukutamu-bengkulu.devbmkg.my.id/",
+    link: "https://bukutamu-bengkulu.bmkg.go.id/",
     github: "",
     tech: [
       "React",
@@ -93,7 +93,7 @@ export const projects = [
     category: "dynamic",
     title: "PTSP – Online Service Management System",
     image: "/assets/work/thum5.png",
-    link: "https://ptsp-bengkulu.devbmkg.my.id/Beranda",
+    link: "https://ptsp-bengkulu.bmkg.go.id/",
     github: "",
     tech: [
       "React",
