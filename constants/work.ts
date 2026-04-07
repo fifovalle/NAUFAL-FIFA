@@ -19,7 +19,7 @@ export const projects = [
     id: 1,
     category: "static",
     title: "Bhinneka Dev – Developer Portfolio Website",
-    image: "/assets/work/thum1.jpeg",
+    image: "/assets/work/thum1.png",
     link: "https://bhinneka-dev.vercel.app/",
     github: "https://github.com/BhinnekaDev/BHINNEKA-DEV",
     tech: ["React", "Next.js", "TypeScript", "Tailwind CSS"],
