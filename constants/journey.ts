@@ -40,7 +40,7 @@ export const journey = [
   // --- 2024 ---
   {
     years: "Jan 2024 - Present",
-    role: "Full Stack Engineer & Team Leader",
+    role: "Full Stack Developer & Team Leader",
     institution:
       "Indonesian Agency for Meteorology, Climatology, and Geophysics (BMKG)",
     gallery: [
@@ -60,7 +60,7 @@ export const journey = [
   },
   {
     years: "Jun 2024 - Jul 2024",
-    role: "Full Stack Engineer",
+    role: "Full Stack Developer",
     institution: "Basarnas Bengkulu",
     gallery: [
       "/assets/journey/basarnas-certificate.jpeg",
