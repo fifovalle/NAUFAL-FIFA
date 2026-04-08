@@ -16,9 +16,12 @@ const someTypeMono = Sometype_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://naufal-fifa.is-a.dev"),
+
   title: "Naufal FIFA | Full-Stack Web Developer (Next.js, React, Node.js)",
   description:
     "Hi, I'm Naufal FIFA, a Full-Stack Cross-Platform Developer specializing in scalable web applications using Next.js, React, and Node.js. Experienced in system architecture and real-world deployments.",
+
   keywords: [
     "Naufal FIFA",
     "Full Stack Developer",
@@ -27,8 +30,10 @@ export const metadata: Metadata = {
     "Web Developer Indonesia",
     "Cross Platform Developer",
   ],
+
   authors: [{ name: "Naufal FIFA" }],
   creator: "Naufal FIFA",
+
   openGraph: {
     title: "Naufal FIFA | Full-Stack Developer",
     description:

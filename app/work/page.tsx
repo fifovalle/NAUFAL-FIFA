@@ -54,7 +54,7 @@ const Home = () => {
           <div className="h-100 scrollbar scrollbar-thumb-accent scrollbar-track-accent/5 overflow-y-scroll xl:overflow-y-visible">
             {categories.map((category) => {
               const filteredProjects = projects.filter(
-                (project) => project.category === category
+                (project) => project.category === category,
               );
 
               return (
@@ -133,6 +133,7 @@ const Home = () => {
                                 src={project.image}
                                 alt={project.title}
                                 className="object-contain"
+                                sizes="(max-width: 1280px) 100vw, 50vw"
                               />
                             </div>
                           </div>
