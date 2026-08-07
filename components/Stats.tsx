@@ -6,7 +6,7 @@ const Stats = () => {
       {/* ============== YEARS EXPERIENCE =============== */}
       <div className="flex gap-4">
         <div className="text-5xl font-bold text-accent flex">
-          <CountUp end={2} delay={3} duration={5} className="block w-8.75" />
+          <CountUp end={3} delay={3} duration={5} className="block w-8.75" />
           <div>+</div>
         </div>
         <span>
@@ -15,10 +15,10 @@ const Stats = () => {
       </div>
 
       {/* ============== CLIENTS EXPERIENCE =============== */}
-      <div className="flex gap-4">
+      <div className="flex gap-9">
         <div className="text-5xl font-bold text-accent flex">
           <CountUp
-            end={8}
+            end={10}
             delay={3}
             duration={7}
             className="block w-16.25 xl:w-8.75"

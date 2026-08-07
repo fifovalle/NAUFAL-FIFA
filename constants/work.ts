@@ -38,11 +38,28 @@ export const projects = [
   // DYNAMIC PROJECTS
   // =========================
   {
+    id: 10,
+    category: "dynamic",
+    title: "Atmos Education - Try Out Online",
+    image: "/assets/work/thum10.png",
+    link: "https://fe-atmos.bhinneka-production.my.id/",
+    github: "",
+    tech: [
+      "React",
+      "Next.js",
+      "Nest.js",
+      "Node.js",
+      "Supabase",
+      "TypeScript",
+      "Tailwind CSS",
+    ],
+  },
+  {
     id: 2,
     category: "dynamic",
     title: "Digital Info Monitor – Curup II Edu",
     image: "/assets/work/thum8.png",
-    link: "https://cabdindikwil-2.vercel.app/Beranda",
+    link: "https://www.cabdinii-crp.my.id/",
     github: "",
     tech: [
       "React",

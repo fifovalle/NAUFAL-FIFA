@@ -1,6 +1,6 @@
 export const journey = [
   {
-    years: "Sep 2025 - Present",
+    years: "Aug 2025 - Present",
     role: "Full Stack Developer",
     institution: "elKopra",
     gallery: [],
