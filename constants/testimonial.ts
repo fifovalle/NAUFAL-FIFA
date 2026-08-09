@@ -1,5 +1,15 @@
 export const testimonial = [
   {
+    name: "Detalia Nurutami, S.Tr",
+    message:
+      "Atmos is a refreshingly modern and unconventional try-out platform with exceptional design.",
+  },
+  {
+    name: "Zahran Aslam Rizqullah, S.Tr.Inst",
+    message:
+      "Atmos combines modern design with an innovative approach to create a truly exceptional try-out platform.",
+  },
+  {
     name: "Kiki Dwi Jayati, S.Pd., M.Pd.",
     message:
       "The website is highly informative, intuitive, and professionally designed.",
