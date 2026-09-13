@@ -5,11 +5,20 @@ export const projects = [
   {
     id: 9,
     category: "digital-product",
-    title: "Nest Saas Backend PostgreSQL",
+    title: "Nestforge-Starter",
     image: "/assets/work/thum9.jpg",
     link: "",
     github: "",
-    tech: ["Nest.js", "PostgreSQL", "TypeScript", "Docker", "Rest API"],
+    tech: [
+      "NestJS",
+      "TypeScript",
+      "Prisma",
+      "PostgreSQL",
+      "Redis",
+      "Docker",
+      "JWT",
+      "Swagger",
+    ],
   },
 
   // =========================
