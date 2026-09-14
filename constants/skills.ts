@@ -5,6 +5,7 @@ import {
   SiDart,
   SiExpo,
   SiJira,
+  SiSentry,
   SiRedux,
   SiMysql,
   SiRedis,
@@ -99,6 +100,7 @@ export const tools: SkillsProps[] = [
   { icon: SiGithubactions, name: "GitHub Actions / CI-CD" },
   { icon: SiJira, name: "Jira" },
   { icon: SiScrumalliance, name: "Agile / Scrum" },
+  { icon: SiSentry, name: "Sentry" },
 ];
 
 // ========== TESTING ==========
