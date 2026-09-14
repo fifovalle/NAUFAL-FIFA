@@ -2,26 +2,35 @@ import {
   SiC,
   SiGit,
   SiPhp,
+  SiJwt,
   SiDart,
   SiExpo,
+  SiJira,
   SiRedux,
   SiMysql,
+  SiRedis,
+  SiPrisma,
   SiDocker,
   SiVercel,
   SiNestjs,
+  SiVitest,
   SiMongodb,
+  SiRailway,
   SiLaravel,
+  SiSwagger,
   SiPostman,
   SiExpress,
   SiArduino,
-  SiFirebase,
   SiFlutter,
+  SiFirebase,
   SiCplusplus,
   SiEspressif,
   SiJavascript,
   SiTypescript,
   SiPostgresql,
+  SiGooglecloud,
   SiGithubactions,
+  SiScrumalliance,
 } from "react-icons/si";
 import {
   RiCss3Fill,
@@ -64,13 +73,18 @@ export const backendSkills: SkillsProps[] = [
   { icon: SiLaravel, name: "Laravel" },
   { icon: RiNodejsFill, name: "Node.js" },
   { icon: SiExpress, name: "Express.js" },
+  { icon: SiPrisma, name: "Prisma ORM" },
+  { icon: SiJwt, name: "JWT Auth" },
+  { icon: SiSwagger, name: "Swagger / OpenAPI" },
 ];
 
-// ========== DATABASE ==========
+// ========== DATABASE & CACHE ==========
 export const databases: SkillsProps[] = [
   { icon: SiMysql, name: "MySQL" },
   { icon: SiMongodb, name: "MongoDB" },
+  { icon: SiRedis, name: "Redis" },
   { icon: SiFirebase, name: "Firebase" },
+  { icon: SiGooglecloud, name: "Firestore / Realtime DB" },
   { icon: RiSupabaseFill, name: "Supabase" },
   { icon: SiPostgresql, name: "PostgreSQL" },
 ];
@@ -79,10 +93,16 @@ export const databases: SkillsProps[] = [
 export const tools: SkillsProps[] = [
   { icon: SiGit, name: "Git" },
   { icon: SiVercel, name: "Vercel" },
+  { icon: SiRailway, name: "Railway" },
   { icon: SiDocker, name: "Docker" },
   { icon: SiPostman, name: "Postman" },
-  { icon: SiGithubactions, name: "GitHub Actions" },
+  { icon: SiGithubactions, name: "GitHub Actions / CI-CD" },
+  { icon: SiJira, name: "Jira" },
+  { icon: SiScrumalliance, name: "Agile / Scrum" },
 ];
+
+// ========== TESTING ==========
+export const testing: SkillsProps[] = [{ icon: SiVitest, name: "Vitest" }];
 
 // ========== IOT ==========
 export const iot: SkillsProps[] = [
