@@ -2,7 +2,6 @@ import {
   SiC,
   SiGit,
   SiPhp,
-  SiJwt,
   SiDart,
   SiExpo,
   SiJira,
@@ -40,6 +39,7 @@ import {
   RiReactjsFill,
   RiSupabaseFill,
   RiTailwindCssFill,
+  RiLockPasswordFill,
 } from "react-icons/ri";
 
 import { SkillsProps } from "@/interfaces/skills-props";
@@ -74,7 +74,7 @@ export const backendSkills: SkillsProps[] = [
   { icon: RiNodejsFill, name: "Node.js" },
   { icon: SiExpress, name: "Express.js" },
   { icon: SiPrisma, name: "Prisma ORM" },
-  { icon: SiJwt, name: "JWT Auth" },
+  { icon: RiLockPasswordFill, name: "JWT Auth" },
   { icon: SiSwagger, name: "Swagger / OpenAPI" },
 ];
 
