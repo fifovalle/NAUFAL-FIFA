@@ -5,10 +5,11 @@ import {
   SiDart,
   SiExpo,
   SiJira,
-  SiSentry,
   SiRedux,
   SiMysql,
   SiRedis,
+  SiSentry,
+  SiGoogle,
   SiPrisma,
   SiDocker,
   SiVercel,
@@ -76,6 +77,7 @@ export const backendSkills: SkillsProps[] = [
   { icon: SiExpress, name: "Express.js" },
   { icon: SiPrisma, name: "Prisma ORM" },
   { icon: RiLockPasswordFill, name: "JWT Auth" },
+  { icon: SiGoogle, name: "Google OAuth 2.0" },
   { icon: SiSwagger, name: "Swagger / OpenAPI" },
 ];
 

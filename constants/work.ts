@@ -17,7 +17,10 @@ export const projects = [
       "Redis",
       "Docker",
       "JWT",
+      "Google OAuth",
       "Swagger",
+      "Vitest",
+      "Sentry",
     ],
   },
 
