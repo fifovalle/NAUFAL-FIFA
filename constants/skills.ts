@@ -10,6 +10,8 @@ import {
   SiRedis,
   SiSentry,
   SiGoogle,
+  SiGithub,
+  SiOpenid,
   SiPrisma,
   SiDocker,
   SiVercel,
@@ -77,7 +79,9 @@ export const backendSkills: SkillsProps[] = [
   { icon: SiExpress, name: "Express.js" },
   { icon: SiPrisma, name: "Prisma ORM" },
   { icon: RiLockPasswordFill, name: "JWT Auth" },
+  { icon: SiOpenid, name: "OAuth 2.0" },
   { icon: SiGoogle, name: "Google OAuth 2.0" },
+  { icon: SiGithub, name: "GitHub OAuth" },
   { icon: SiSwagger, name: "Swagger / OpenAPI" },
 ];
 
@@ -98,6 +102,7 @@ export const tools: SkillsProps[] = [
   { icon: SiVercel, name: "Vercel" },
   { icon: SiRailway, name: "Railway" },
   { icon: SiDocker, name: "Docker" },
+  { icon: SiDocker, name: "Docker Compose" },
   { icon: SiPostman, name: "Postman" },
   { icon: SiGithubactions, name: "GitHub Actions / CI-CD" },
   { icon: SiJira, name: "Jira" },
