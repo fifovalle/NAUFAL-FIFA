@@ -77,7 +77,7 @@ export const backendSkills: SkillsProps[] = [
   { icon: SiExpress, name: "Express.js" },
   { icon: SiPrisma, name: "Prisma ORM" },
   { icon: RiLockPasswordFill, name: "JWT Auth" },
-  { icon: SiOpenid, name: "OAuth 2.0 (Google, GitHub & Facebook)" },
+  { icon: SiOpenid, name: "OAuth 2.0 (Google, GitHub, Facebook & Discord)" },
   { icon: SiSwagger, name: "Swagger / OpenAPI" },
 ];
 
