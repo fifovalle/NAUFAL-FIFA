@@ -32,6 +32,7 @@ import {
   SiGooglecloud,
   SiGithubactions,
   SiScrumalliance,
+  SiGoogleauthenticator,
 } from "react-icons/si";
 import {
   RiCss3Fill,
@@ -78,6 +79,8 @@ export const backendSkills: SkillsProps[] = [
   { icon: SiPrisma, name: "Prisma ORM" },
   { icon: RiLockPasswordFill, name: "JWT Auth" },
   { icon: SiOpenid, name: "OAuth 2.0 (Google, GitHub, Facebook & Discord)" },
+  { icon: SiGoogleauthenticator, name: "2FA (TOTP)" },
+  { icon: RiLockPasswordFill, name: "AES-256-GCM Encryption" },
   { icon: SiSwagger, name: "Swagger / OpenAPI" },
 ];
 
@@ -107,7 +110,11 @@ export const tools: SkillsProps[] = [
 ];
 
 // ========== TESTING ==========
-export const testing: SkillsProps[] = [{ icon: SiVitest, name: "Vitest" }];
+export const testing: SkillsProps[] = [
+  { icon: SiVitest, name: "Vitest" },
+  { icon: SiVitest, name: "Unit Testing" },
+  { icon: SiVitest, name: "E2E Testing" },
+];
 
 // ========== IOT ==========
 export const iot: SkillsProps[] = [
